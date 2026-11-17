@@ -21,6 +21,7 @@
               footer: '#4A3222',
               dark: '#5A3E2B',
               DEFAULT: '#6F4E37',
+              warm: '#8B6548',
               medium: '#8B6B56',
               latte: '#B89F8D',
               soft: '#EFE8E0',
@@ -98,17 +99,17 @@
       <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 font-medium">
         <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#1E3F2E] text-emerald-100 border border-white/15 tracking-wide">
           <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
-          WORKSHOP BANDUNG
+          WORKSHOP BANDUNG RAYA
         </span>
         <span>
-          <strong>Khai' Furniture</strong> — Jasa Pembuatan Custom Furniture Bandung &bull; Konsultasi Desain &amp; Survey Lokasi Gratis Area Bandung Raya
+          <strong>Khai' Furniture</strong> — Layanan Custom Interior &amp; Kitchen Set Bandung Raya &bull; <strong>Gratis Survei &amp; Konsultasi Desain</strong>
         </span>
       </div>
       <button
         onclick="openGeneralConsultWhatsapp()"
         class="shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-100 hover:text-white underline underline-offset-4 cursor-pointer"
       >
-        <span>Jadwalkan Survey Lokasi &rarr;</span>
+        <span>Jadwalkan Survei Gratis &rarr;</span>
       </button>
     </div>
   </div>
@@ -223,7 +224,7 @@
               type="text"
               id="desktopSearchInput"
               oninput="handleSearchInput(this.value)"
-              placeholder="Cari sofa L moka, kitchen set HPL, dipan jati, kode SKU..."
+              placeholder="Cari kitchen set, backdrop TV, wall panel, kode katalog, material..."
               class="w-full pl-11 pr-10 py-2.5 bg-[#FAF8F5] border border-[#B89F8D]/45 rounded-xl text-sm text-[#2C1E16] placeholder-[#6D5D53]/75 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37] transition"
             />
             <button
@@ -267,7 +268,7 @@
             type="text"
             id="mobileSearchInput"
             oninput="handleSearchInput(this.value)"
-            placeholder="Cari nama produk, kategori, SKU, atau material..."
+            placeholder="Cari judul karya, kategori, kode katalog, atau material..."
             class="w-full pl-10 pr-9 py-2 bg-[#FAF8F5] border border-[#B89F8D]/45 rounded-xl text-sm text-[#2C1E16] placeholder-[#6D5D53]/75 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
           />
           <button
@@ -285,25 +286,22 @@
       <!-- Horizontal Category Navigation Bar -->
       <nav aria-label="Navigasi Kategori Furnitur" class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-2.5 border-t border-[#B89F8D]/20 text-xs sm:text-sm">
         <button onclick="selectCategory('Semua Produk')" data-nav-cat="Semua Produk" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-semibold bg-[#6F4E37] text-white transition cursor-pointer">
-          Semua Produk
+          Semua Karya (10)
         </button>
-        <button onclick="selectCategory('Ruang Tamu')" data-nav-cat="Ruang Tamu" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
-          Ruang Tamu
+        <button onclick="selectCategory('Kitchen Set & Mini Bar')" data-nav-cat="Kitchen Set & Mini Bar" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Kitchen Set &amp; Mini Bar
+        </button>
+        <button onclick="selectCategory('Backdrop TV')" data-nav-cat="Backdrop TV" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Backdrop TV
         </button>
         <button onclick="selectCategory('Kamar Tidur')" data-nav-cat="Kamar Tidur" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
           Kamar Tidur
         </button>
-        <button onclick="selectCategory('Ruang Makan')" data-nav-cat="Ruang Makan" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
-          Ruang Makan
+        <button onclick="selectCategory('Wall Panel & Partisi')" data-nav-cat="Wall Panel & Partisi" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Wall Panel &amp; Partisi
         </button>
-        <button onclick="selectCategory('Ruang Kerja')" data-nav-cat="Ruang Kerja" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
-          Ruang Kerja
-        </button>
-        <button onclick="selectCategory('Lemari & Kabinet')" data-nav-cat="Lemari & Kabinet" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
-          Lemari &amp; Kabinet
-        </button>
-        <button onclick="selectCategory('Kitchen Set & Custom')" data-nav-cat="Kitchen Set & Custom" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
-          Kitchen Set &amp; Custom
+        <button onclick="selectCategory('Ruang Tamu & Keluarga')" data-nav-cat="Ruang Tamu & Keluarga" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Ruang Tamu &amp; Keluarga
         </button>
       </nav>
     </div>
@@ -311,7 +309,7 @@
 
   <main>
     <!-- ===================================================================== -->
-    <!-- 3. HERO BANNER CAROUSEL (3 SLIDES TAILORED TO KHAI' FURNITURE BANDUNG) -->
+    <!-- 3. HERO BANNER CAROUSEL (3 SLIDES USING REAL KHAI' FURNITURE PHOTOS)  -->
     <!-- ===================================================================== -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 sm:pt-7 pb-4">
       <div
@@ -322,113 +320,113 @@
       >
         <!-- Carousel Track -->
         <div id="heroSlidesTrack" class="flex transition-transform duration-700 ease-out">
-          <!-- Slide 1: Jasa Pembuatan Custom Furniture Bandung -->
+          <!-- Slide 1: Kitchen Set L-Shape & Mini Bar Dua Warna Walnut-Charcoal -->
           <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EFE8E0]">
             <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
               <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E3F2E]/10 text-[#1E3F2E] text-xs font-bold tracking-wider uppercase mb-4">
                 <span class="w-2 h-2 rounded-full bg-[#1E3F2E]"></span>
-                Workshop Bandung &bull; Custom Interior
+                Kitchen Set &amp; Mini Bar Custom Bandung
               </span>
-              <h1 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
-                Jasa Pembuatan <span class="text-[#6F4E37] italic">Custom Furniture</span> Bandung
+              <h1 class="font-serif text-2xl sm:text-4xl lg:text-[38px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Kitchen Set L-Shape &amp; <span class="text-[#6F4E37] italic">Mini Bar Walnut-Charcoal</span>
               </h1>
               <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
-                Wujudkan interior impian dengan material pilihan dan pengerjaan presisi dari workshop Bandung. Bebas konsultasi desain, pemilihan warna moka-putih, dan penyesuaian ukuran ruangan Anda.
+                Pengerjaan presisi oleh workshop Khai' Furniture Bandung menggunakan Multipleks/Blockboard Grade A, finishing HPL Taco kombinasi walnut &amp; matte charcoal, lengkap dengan pencahayaan LED hangat.
               </p>
               <div class="flex flex-wrap items-center gap-3">
-                <a
-                  href="#katalogUtama"
-                  class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition inline-flex items-center gap-2"
+                <button
+                  onclick="scrollToCategory('Kitchen Set & Mini Bar')"
+                  class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition cursor-pointer inline-flex items-center gap-2"
                 >
-                  <span>Lihat Katalog Custom</span>
+                  <span>Lihat Kitchen Set &amp; Mini Bar</span>
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
-                </a>
+                </button>
                 <button
                   onclick="openGeneralConsultWhatsapp()"
                   class="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-semibold text-sm shadow-sm transition cursor-pointer inline-flex items-center gap-2"
                 >
-                  <span>Chat Konsultasi WA</span>
+                  <span>Survei &amp; Konsultasi WA</span>
                 </button>
               </div>
             </div>
-            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+            <div class="lg:col-span-6 h-64 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
               <img
-                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85"
-                alt="Jasa Pembuatan Custom Furniture Bandung — Khai' Furniture"
-                onerror="handleImageFallback(this, 'Custom Interior', 'Khai\' Furniture Bandung')"
+                src="WhatsApp Image 2026-11-17 at 15.40.29.jpeg"
+                alt="Kitchen Set L-Shape & Mini Bar Dua Warna Walnut-Charcoal — Khai' Furniture Bandung"
+                onerror="handleImageFallback(this, 'Kitchen Set & Mini Bar', 'Kitchen Set L-Shape & Mini Bar')"
                 class="w-full h-full object-cover object-center"
               />
               <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
-                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Khai' Furniture Bandung</p>
-                <p class="text-xs font-semibold text-[#2C1E16]">Custom Ukuran, Material &amp; Finishing Sesuai Ruangan</p>
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Portofolio Asli Workshop Bandung</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Kitchen Set L-Shape, Peninsula Mini Bar &amp; LED Kabinet</p>
               </div>
             </div>
           </div>
 
-          <!-- Slide 2: Kitchen Set & Kabinet Custom Presisi -->
+          <!-- Slide 2: Backdrop TV Motif Marmer & Mocha Panel -->
           <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EAE1D6]">
             <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
               <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6F4E37]/10 text-[#6F4E37] text-xs font-bold tracking-wider uppercase mb-4">
-                Kitchen Set &amp; Wardrobe
+                Backdrop TV &amp; Credenza Custom
               </span>
-              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
-                Kitchen Set &amp; Kabinet <span class="text-[#6F4E37] italic">Custom Presisi</span>
+              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[38px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Backdrop TV Marmer Putih &amp; <span class="text-[#6F4E37] italic">Panel Mocha LED</span>
               </h2>
               <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
-                Desain menyesuaikan ukuran ruangan Anda, finishing HPL, Duco, hingga Kayu Solid. Dilengkapi engsel soft-close dan tata ruang ergonomis untuk dapur modern bernuansa moka &amp; putih.
+                Perpaduan mewah panel HPL motif marmer Carrara berbingkai hitam matte, kisi-kisi kayu oak, dan credenza gantung dengan instalasi jalur kabel tersembunyi yang rapi.
               </p>
               <div class="flex flex-wrap items-center gap-3">
                 <button
-                  onclick="scrollToCategory('Kitchen Set & Custom')"
+                  onclick="scrollToCategory('Backdrop TV')"
                   class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition cursor-pointer inline-flex items-center gap-2"
                 >
-                  <span>Koleksi Kitchen Set &amp; Custom</span>
+                  <span>Lihat Koleksi Backdrop TV</span>
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </button>
                 <button
-                  onclick="scrollToCategory('Lemari & Kabinet')"
+                  onclick="scrollToCategory('Wall Panel & Partisi')"
                   class="px-5 py-3 rounded-xl bg-white hover:bg-[#EFE8E0] border border-[#B89F8D]/50 text-[#2C1E16] font-semibold text-sm transition cursor-pointer"
                 >
-                  Lihat Lemari &amp; Kabinet
+                  Wall Panel &amp; Partisi
                 </button>
               </div>
             </div>
-            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+            <div class="lg:col-span-6 h-64 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
               <img
-                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=85"
-                alt="Kitchen Set dan Kabinet Custom Presisi Bandung"
-                onerror="handleImageFallback(this, 'Kitchen Set & Custom', 'Kitchen Set Custom Presisi')"
+                src="WhatsApp Image 2026-11-17 at 15.16.25 (2).jpeg"
+                alt="Backdrop TV Motif Marmer Putih Frame Hitam & Credenza Abu"
+                onerror="handleImageFallback(this, 'Backdrop TV', 'Backdrop TV Marmer & Credenza')"
                 class="w-full h-full object-cover object-center"
               />
               <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
-                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Plywood Meranti &amp; HPL Premium</p>
-                <p class="text-xs font-semibold text-[#2C1E16]">Gratis Konsultasi Layout &amp; Pengukuran Bandung</p>
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">HPL Marmer Carrara &amp; Oak</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Custom Ukuran Dinding &amp; Instalasi LED Warm White</p>
               </div>
             </div>
           </div>
 
-          <!-- Slide 3: Sofa, Meja & Furnitur Estetik Bernuansa Hangat -->
+          <!-- Slide 3: Master Bedroom Panel Kisi-Kisi Plafon & Set Kamar Tidur -->
           <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EFE8E0]">
             <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
               <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E3F2E]/10 text-[#1E3F2E] text-xs font-bold tracking-wider uppercase mb-4">
-                Rumah &bull; Apartemen &bull; Kantor
+                Set Kamar Tidur Custom
               </span>
-              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
-                Sofa, Meja &amp; Furnitur Estetik <span class="text-[#6F4E37] italic">Bernuansa Hangat</span>
+              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[38px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Master Bedroom <span class="text-[#6F4E37] italic">Panel Kisi-Kisi Plafon</span> &amp; Bench Moka
               </h2>
               <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
-                Konsultasikan kebutuhan furnitur rumah, apartemen, maupun kantor langsung via WhatsApp. Pilih jenis kain, warna kayu, hingga dimensi khusus sesuai gaya interior Anda.
+                Hadirkan suasana kamar tidur setara hotel berbintang dengan panel kisi-kisi kayu menerus hingga plafon kanopi, pencahayaan indirect cove LED, dipan platform, dan nakas kembar.
               </p>
               <div class="flex flex-wrap items-center gap-3">
                 <button
-                  onclick="scrollToCategory('Ruang Tamu')"
+                  onclick="scrollToCategory('Kamar Tidur')"
                   class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition cursor-pointer inline-flex items-center gap-2"
                 >
-                  <span>Eksplorasi Ruang Tamu</span>
+                  <span>Eksplorasi Kamar Tidur</span>
                   <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
@@ -441,16 +439,16 @@
                 </button>
               </div>
             </div>
-            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+            <div class="lg:col-span-6 h-64 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
               <img
-                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85"
-                alt="Sofa dan Furnitur Estetik Bernuansa Hangat"
-                onerror="handleImageFallback(this, 'Ruang Tamu', 'Sofa & Furnitur Estetik')"
+                src="WhatsApp Image 2026-11-17 at 15.16.27.jpeg"
+                alt="Master Bedroom Panel Kisi-Kisi Plafon, Nakas & Bench Moka"
+                onerror="handleImageFallback(this, 'Kamar Tidur', 'Master Bedroom Kisi-Kisi Plafon')"
                 class="w-full h-full object-cover object-center"
               />
               <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
-                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Furniture And More</p>
-                <p class="text-xs font-semibold text-[#2C1E16]">Kualitas Pengerjaan Rapi &amp; Bergaransi Konstruksi</p>
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Khai' Furniture Bandung</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Desain Custom Sesuai Dimensi Kamar &amp; Plafon</p>
               </div>
             </div>
           </div>
@@ -486,7 +484,29 @@
     </section>
 
     <!-- ===================================================================== -->
-    <!-- 4. 6 CATEGORY CARDS WITH ICONS & DYNAMIC PRODUCT COUNTS               -->
+    <!-- 4. 5 CATEGORY CARDS WITH ICONS & DYNAMIC PRODUCT COUNTS               -->
+    <!-- ===================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div class="flex items-end justify-between mb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#8B6548]">Kategori Portofolio Custom</span>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#2C1E16] mt-0.5">Kategori Pilihan</h2>
+        </div>
+        <button
+          onclick="resetAllFilters()"
+          class="text-xs sm:text-sm font-semibold text-[#6F4E37] hover:text-[#5A3E2B] underline underline-offset-4 cursor-pointer"
+        >
+          Lihat Semua (10)
+        </button>
+      </div>
+
+      <div id="categoryGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4">
+        <!-- Rendered dynamically via JS with live product counts -->
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 5. KARYA CUSTOM UNGGULAN MINGGU INI                                   -->
     <!-- ===================================================================== -->
     <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
       <div class="flex items-end justify-between mb-5">
@@ -508,52 +528,17 @@
     </section>
 
     <!-- ===================================================================== -->
-    <!-- 5. PRODUK UNGGULAN MINGGU INI (HIGHLIGHT CURATED CUSTOM PIECES)       -->
-    <!-- ===================================================================== -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
-      <div class="rounded-2xl sm:rounded-3xl bg-gradient-to-r from-[#5A3E2B] via-[#6F4E37] to-[#8B6B56] p-5 sm:p-8 text-white shadow-soft">
-        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/15">
-          <div>
-            <div class="flex flex-wrap items-center gap-2">
-              <span class="px-2.5 py-0.5 rounded-full bg-[#1E3F2E] text-emerald-100 border border-white/20 text-[11px] font-bold uppercase tracking-wider">
-                Kurasi Workshop Bandung
-              </span>
-              <span class="text-xs text-amber-100/85 font-medium">Bisa Request Custom Ukuran &amp; Warna</span>
-            </div>
-            <h2 class="font-serif text-xl sm:text-2xl font-bold tracking-tight mt-1.5">
-              Produk Unggulan Minggu Ini
-            </h2>
-            <p class="text-xs sm:text-sm text-amber-100/90 mt-0.5">
-              Model furnitur custom paling diminati klien rumah tinggal, apartemen, dan kantor di Bandung Raya.
-            </p>
-          </div>
-          <a
-            href="#katalogUtama"
-            class="self-start md:self-auto px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 text-white text-xs sm:text-sm font-semibold transition"
-          >
-            Lihat Semua Katalog &darr;
-          </a>
-        </div>
-
-        <!-- 4 Highlighted Featured Products -->
-        <div id="featuredGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-6">
-          <!-- Rendered dynamically via JS -->
-        </div>
-      </div>
-    </section>
-
-    <!-- ===================================================================== -->
-    <!-- 6. KATALOG LENGKAP FURNITURE (12 PRODUK + FILTER KATEGORI & SEARCH)   -->
+    <!-- 6. KATALOG KARYA & PRODUK CUSTOM (10 FOTO ASLI + FILTER & SEARCH)     -->
     <!-- ===================================================================== -->
     <section id="katalogUtama" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
       <!-- Header & Counter -->
       <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
         <div>
-          <span class="text-xs font-bold uppercase tracking-widest text-[#1E3F2E]">Khai' Furniture Bandung</span>
-          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2C1E16] mt-0.5">Katalog Lengkap Furniture</h2>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#1E3F2E]">Portofolio Hasil Karya Workshop Bandung</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2C1E16] mt-0.5">Katalog Karya &amp; Produk Custom</h2>
         </div>
         <p id="catalogCountText" class="text-sm text-[#6D5D53] font-medium">
-          Menampilkan 12 produk custom &amp; siap pesan
+          Menampilkan 10 dari 10 karya custom interior
         </p>
       </div>
 
@@ -563,27 +548,26 @@
           <!-- Filter Category Dropdown -->
           <div class="flex-1 max-w-md">
             <label for="filterCategory" class="block text-xs font-bold uppercase tracking-wider text-[#6D5D53] mb-1.5">
-              Filter Kategori Ruangan
+              Filter Kategori Pekerjaan Custom
             </label>
             <select
               id="filterCategory"
               onchange="selectCategory(this.value)"
               class="w-full px-3.5 py-2.5 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/45 text-sm font-medium text-[#2C1E16] focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
             >
-              <option value="Semua Produk">Semua Produk (12 Model)</option>
-              <option value="Ruang Tamu">Ruang Tamu</option>
+              <option value="Semua Produk">Semua Karya Custom (10 Portofolio)</option>
+              <option value="Kitchen Set & Mini Bar">Kitchen Set &amp; Mini Bar</option>
+              <option value="Backdrop TV">Backdrop TV</option>
               <option value="Kamar Tidur">Kamar Tidur</option>
-              <option value="Ruang Makan">Ruang Makan</option>
-              <option value="Ruang Kerja">Ruang Kerja</option>
-              <option value="Lemari & Kabinet">Lemari &amp; Kabinet</option>
-              <option value="Kitchen Set & Custom">Kitchen Set &amp; Custom</option>
+              <option value="Wall Panel & Partisi">Wall Panel &amp; Partisi</option>
+              <option value="Ruang Tamu & Keluarga">Ruang Tamu &amp; Keluarga</option>
             </select>
           </div>
 
           <!-- Info Note + Reset Button -->
           <div class="flex flex-wrap items-center gap-3">
             <div class="px-3.5 py-2 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/30 text-xs text-[#6D5D53]">
-              <strong class="text-[#1E3F2E]">Info Custom:</strong> Semua model dapat disesuaikan dimensi, material &amp; warna finishing.
+              <strong class="text-[#1E3F2E]">Custom Ukuran &amp; HPL:</strong> Klik foto atau tombol detail untuk melihat foto penuh tanpa terpotong.
             </div>
             <button
               onclick="resetAllFilters()"
@@ -601,8 +585,8 @@
         <div id="activeFilterPills" class="hidden flex-wrap items-center gap-2 mt-3.5 pt-3 border-t border-[#B89F8D]/20 text-xs"></div>
       </div>
 
-      <!-- 12-Product Catalog Grid -->
-      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+      <!-- 10-Product Real Portfolio Catalog Grid -->
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
         <!-- Rendered dynamically via JS -->
       </div>
 
@@ -804,12 +788,11 @@
         <div class="lg:col-span-3">
           <h4 class="font-bold text-[#FAF8F5] text-sm uppercase tracking-wider mb-4">Kategori Katalog</h4>
           <ul class="space-y-2.5 text-sm text-[#D4B48C]">
-            <li><button onclick="scrollToCategory('Ruang Tamu')" class="hover:text-white transition cursor-pointer">Ruang Tamu</button></li>
+            <li><button onclick="scrollToCategory('Kitchen Set & Mini Bar')" class="hover:text-white transition cursor-pointer">Kitchen Set &amp; Mini Bar</button></li>
+            <li><button onclick="scrollToCategory('Backdrop TV')" class="hover:text-white transition cursor-pointer">Backdrop TV</button></li>
             <li><button onclick="scrollToCategory('Kamar Tidur')" class="hover:text-white transition cursor-pointer">Kamar Tidur</button></li>
-            <li><button onclick="scrollToCategory('Ruang Makan')" class="hover:text-white transition cursor-pointer">Ruang Makan</button></li>
-            <li><button onclick="scrollToCategory('Ruang Kerja')" class="hover:text-white transition cursor-pointer">Ruang Kerja</button></li>
-            <li><button onclick="scrollToCategory('Lemari & Kabinet')" class="hover:text-white transition cursor-pointer">Lemari &amp; Kabinet</button></li>
-            <li><button onclick="scrollToCategory('Kitchen Set & Custom')" class="hover:text-white transition cursor-pointer">Kitchen Set &amp; Custom</button></li>
+            <li><button onclick="scrollToCategory('Wall Panel & Partisi')" class="hover:text-white transition cursor-pointer">Wall Panel &amp; Partisi</button></li>
+            <li><button onclick="scrollToCategory('Ruang Tamu & Keluarga')" class="hover:text-white transition cursor-pointer">Ruang Tamu &amp; Keluarga</button></li>
           </ul>
         </div>
 
@@ -901,297 +884,263 @@
   <!-- ===================================================================== -->
   <script>
     // =========================================================================
-    // 1. CONFIGURATION & COLOR SWATCHES
+    // 1. CONFIGURATION & HPL / FINISHING SWATCHES
     // =========================================================================
     const WHATSAPP_NUMBER = '6281234567890';
 
     const COLOR_SWATCHES = {
-      'Mocha Walnut': '#6F4E37',
       'Natural Oak': '#C69C6D',
+      'Mocha Walnut': '#6F4E37',
+      'Matte Charcoal': '#3A3D40',
+      'Carrara Marble': '#EAEAE6',
       'Cream Linen': '#EDE4D7',
-      'Dark Espresso': '#3B261A',
       'Matte White': '#FAF8F5',
     };
 
     // =========================================================================
-    // 2. 12 DIVERSE FURNITURE & CUSTOM INTERIOR CATALOG ITEMS (NO PRICES)
+    // 2. 10 REAL UPLOADED PORTFOLIO ITEMS (100% MATCHED TO PHOTOS, NO PRICES)
     // =========================================================================
     const PRODUCTS = [
       {
-        id: 'kf-1',
-        sku: 'KF-RT-01',
-        name: 'Sofa L Minimalis Mocha',
-        category: 'Ruang Tamu',
-        featured: true,
-        badge: 'Custom Favorit',
-        summary: 'Rangka kayu mahoni oven, kain linen woven anti-cakar, busa high-density D32.',
-        variants: ['Mocha Walnut', 'Cream Linen', 'Dark Espresso', 'Matte White'],
-        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Sofa sudut bentuk L modern dengan proporsi nyaman untuk ruang keluarga masa kini. Dapat dipesan custom posisi chaise (kiri/kanan), panjang dudukan, serta pilihan kain linen maupun velvet tahan noda.',
-        specs: {
-          material: 'Kayu Solid Mahoni Oven Anti-Rayap & Busa High-Density D32',
-          finishing: 'Kain Linen Woven Water-Repellent & Kaki Kayu Natural Doff',
-          dimensions: '240 x 165 x 82 cm (Bisa Custom Ukuran Ruangan)',
-          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Resmi Konstruksi Rangka & Busa 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-2',
+        id: 'kf-01',
         sku: 'KF-KT-01',
-        name: 'Dipan Kayu Jati & Headboard Busa',
+        name: 'Set Kamar Tidur Wall Panel Kisi-Kisi, Ambalan LED & Meja Belajar',
         category: 'Kamar Tidur',
-        featured: true,
-        badge: 'Kayu Jati Solid',
-        summary: 'Konstruksi kayu jati solid kokoh dengan sandaran kepala empuk berlapis kain moka.',
-        variants: ['Mocha Walnut', 'Natural Oak', 'Cream Linen', 'Dark Espresso'],
-        image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Rangka tempat tidur kokoh berbahan kayu jati pilihan dengan headboard empuk berjahit vertikal estetik. Tersedia untuk ukuran Single, Queen (160x200), King (180x200), hingga tambahan laci penyimpanan bawah.',
-        specs: {
-          material: 'Kayu Jati Solid Kiln-Dried & Slat Penopang Tebal',
-          finishing: 'Melamine Doff Serat Kayu + Headboard Fabric Soft-Touch',
-          dimensions: '172 x 212 x 115 cm / Queen (Bisa Custom King & Laci Bawah)',
-          leadTime: '12 – 16 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi Kayu & Sambungan 5 Tahun',
-        },
-      },
-      {
-        id: 'kf-3',
-        sku: 'KF-RM-01',
-        name: 'Meja Makan Kayu Solid 6 Kursi',
-        category: 'Ruang Makan',
         featured: false,
-        badge: 'Set Keluarga',
-        summary: 'Top table kayu solid tebal 4 cm dengan sudut membulat & 6 kursi ergonomis.',
-        variants: ['Natural Oak', 'Mocha Walnut', 'Dark Espresso', 'Matte White'],
-        image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=80',
+        badge: 'Set Kamar Custom',
+        summary: 'Headboard wall panel kisi-kisi kayu vertikal, rak ambalan melayang dengan warm LED strip, meja belajar gantung minimalis, dan dipan kain abu-abu.',
+        variants: ['Natural Oak', 'Mocha Walnut', 'Cream Linen', 'Matte White'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.24 (1).jpeg',
         description:
-          'Set meja makan keluarga berkapasitas 6 orang dengan tampilan hangat bergaya modern Japandi. Permukaan meja dilapisi pelindung tahan panas dan noda cairan sehingga mudah dirawat setiap hari.',
+          'Paket desain interior kamar tidur minimalis modern dengan wall panel kisi-kisi kayu vertikal setinggi headboard, tiga tingkat rak ambalan melayang ber-LED warm white, meja belajar gantung terintegrasi, serta rangka dipan empuk berlapis kain abu-abu.',
         specs: {
-          material: '100% Kayu Solid Jati / Sungkai Pilihan',
-          finishing: 'Polyurethane Matte Tahan Panas & Noda Cairan',
-          dimensions: 'Meja 180 x 90 x 75 cm + 6 Kursi (Bisa Custom 4–8 Kursi)',
-          leadTime: '14 – 18 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi Resmi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-4',
-        sku: 'KF-RK-01',
-        name: 'Meja Kerja Direktur & Rak Buku',
-        category: 'Ruang Kerja',
-        featured: false,
-        badge: 'Office & WFH',
-        summary: 'Meja kerja eksekutif lengkap dengan kabinet samping dan rak arsip terintegrasi.',
-        variants: ['Mocha Walnut', 'Dark Espresso', 'Natural Oak', 'Matte White'],
-        image: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Solusi ruang kerja profesional di rumah maupun kantor dengan meja luas, lubang manajemen kabel tersembunyi (grommet), laci berkunci, dan rak buku belakang yang serasi.',
-        specs: {
-          material: 'Plywood Meranti 18mm & Rangka Kaki Besi Hollow Powder-Coated',
-          finishing: 'HPL Taco Woodgrain Texture & Edging PVC Presisi',
-          dimensions: 'Meja 160 x 75 x 75 cm + Rak 120 x 35 x 190 cm (Custom)',
-          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi & Rel Laci 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-5',
-        sku: 'KF-LK-01',
-        name: 'Lemari Pakaian Sliding 3 Pintu Custom',
-        category: 'Lemari & Kabinet',
-        featured: true,
-        badge: 'Custom Full Plafon',
-        summary: 'Pintu geser hemat ruang dengan kombinasi HPL moka-putih & kompartemen gantungan.',
-        variants: ['Matte White', 'Mocha Walnut', 'Cream Linen', 'Natural Oak'],
-        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Lemari pakaian 3 pintu geser (sliding) yang dirancang presisi mengikuti tinggi dan lebar dinding kamar Anda. Bagian dalam dapat dicustom untuk gantungan gamis/jas, laci perhiasan, dan rak lipat.',
-        specs: {
-          material: 'Plywood Meranti Solid 18mm (Bukan Serbuk Kayu / Particle Board)',
-          finishing: 'Kombinasi HPL Matte White & Mocha Woodgrain',
-          dimensions: '180 x 60 x 220 cm (Bisa Custom Full Plafon)',
-          leadTime: '14 – 20 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Rel Pintu & Konstruksi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-6',
-        sku: 'KF-KC-01',
-        name: 'Kitchen Set Minimalis HPL Moka-Putih',
-        category: 'Kitchen Set & Custom',
-        featured: true,
-        badge: 'Best Seller Custom',
-        summary: 'Kabinet atas-bawah presisi dengan engsel soft-close & pilihan top table granit.',
-        variants: ['Matte White', 'Mocha Walnut', 'Cream Linen', 'Natural Oak'],
-        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Pembuatan kitchen set custom menyesuaikan layout dapur lurus (single line), bentuk L, maupun U. Menggunakan plywood tahan lembap dengan hardware engsel slow-motion dan rak piring tarik.',
-        specs: {
-          material: 'Plywood Meranti Tahan Lembap & Engsel Slow-Motion',
-          finishing: 'HPL Taco Moka & Putih Doff (Opsi Top Table Granit / Solid Surface)',
-          dimensions: 'Custom Menyesuaikan Ukuran Dapur (Survey Lokasi Bandung)',
+          material: 'Multipleks / Blockboard Grade A 18mm & Rangka Kayu Solid Oven',
+          finishing: 'HPL Taco / Carta Woodgrain & Matte Grey + Fabric Soft-Touch',
+          lighting: 'Lampu LED Strip Warm White 3000K Tersembunyi (Hidden Cove)',
+          dimensions: 'Custom Menyesuaikan Ukuran Kamar & Kasur (160x200 / 180x200 cm)',
           leadTime: '14 – 21 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Instalasi Resmi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-02',
+        sku: 'KF-WP-01',
+        name: 'Backdrop Kisi-Kisi Walnut, Cermin LED & Kabinet Bawah Tangga',
+        category: 'Wall Panel & Partisi',
+        featured: true,
+        badge: 'Custom Bawah Tangga',
+        summary: 'Panel dinding kisi-kisi dark walnut, cermin dinding horizontal backlit LED, serta kabinet penyimpanan dan rak buku bawah tangga.',
+        variants: ['Mocha Walnut', 'Natural Oak', 'Matte White', 'Cream Linen'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.24 (2).jpeg',
+        description:
+          'Solusi penataan area foyer dan ruang bawah tangga agar fungsional sekaligus elegan. Menggabungkan panel kisi-kisi vertikal warna dark walnut, cermin bevel horizontal dengan lampu LED backlit di sekelilingnya, serta kabinet penyimpanan dan rak buku custom mengikuti kemiringan tangga.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm & Cermin Bevel 5mm',
+          finishing: 'HPL Taco / Carta Dark Walnut & Serat Kayu Hangat',
+          lighting: 'Backlit LED Strip Warm White Keliling Cermin & Rak Bawah Tangga',
+          dimensions: 'Custom Presisi Mengikuti Tinggi Dinding & Sudut Tangga',
+          leadTime: '12 – 18 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Engsel Slow-Motion 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-03',
+        sku: 'KF-TV-01',
+        name: 'Backdrop TV Panel Mocha, Credenza Gantung & Rak Pajangan LED',
+        category: 'Backdrop TV',
+        featured: false,
+        badge: 'Backdrop & Display',
+        summary: 'Panel dinding TV HPL mocha beralur yang diapit kisi-kisi kayu oak, meja credenza gantung panjang, serta lemari pajangan tinggi dengan lampu LED hangat.',
+        variants: ['Mocha Walnut', 'Natural Oak', 'Cream Linen', 'Matte Charcoal'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.24.jpeg',
+        description:
+          'Backdrop TV full-height bernuansa moka hangat dengan kombinasi panel HPL mocha beralur (grooved panel) di bagian tengah, kisi-kisi kayu oak di sisi kiri-kanan, meja credenza melayang (floating) ber-laci, serta rak pajangan tinggi dengan lampu LED di setiap ambalan.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm & Kisi-Kisi Woodpanel',
+          finishing: 'HPL Taco / Carta Mocha Matte & Natural Oak Woodgrain',
+          lighting: 'Lampu LED Strip Warm White di Plafon Cove & Rak Pajangan',
+          dimensions: 'Custom Menyesuaikan Lebar Dinding Ruang Keluarga (240 – 360 cm)',
+          leadTime: '12 – 16 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Rel Laci Slow-Motion 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-04',
+        sku: 'KF-WP-02',
+        name: 'Partisi Kisi-Kisi Penyekat Ruangan & Backdrop TV Minimalis',
+        category: 'Wall Panel & Partisi',
+        featured: false,
+        badge: 'Partisi 2 Sisi',
+        summary: 'Partisi kisi-kisi kayu lantai-ke-plafon dengan rak buku asimetris menyatu serta backdrop TV putih aksen kisi-kisi dan credenza gantung dua tingkat.',
+        variants: ['Natural Oak', 'Matte White', 'Mocha Walnut', 'Cream Linen'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.25 (1).jpeg',
+        description:
+          'Penyekat ruangan semi-terbuka dari lantai hingga plafon berbahan kisi-kisi kayu oak yang dilengkapi rak buku asimetris menyatu di bagian samping. Dipadukan dengan backdrop TV putih minimalis aksen kisi-kisi vertikal, lampu LED backlit, dan credenza gantung dua tingkat.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm & Rangka Partisi Kokoh',
+          finishing: 'HPL Taco / Carta Natural Oak & Matte White Doff',
+          lighting: 'Hidden LED Backlit di Belakang Panel TV',
+          dimensions: 'Custom Lantai-ke-Plafon Menyesuaikan Layout Ruangan',
+          leadTime: '12 – 18 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Pemasangan Resmi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-05',
+        sku: 'KF-TV-02',
+        name: 'Backdrop TV Motif Marmer Putih Frame Hitam & Credenza Abu',
+        category: 'Backdrop TV',
+        featured: true,
+        badge: 'Favorit Modern',
+        summary: 'Panel TV motif marmer Carrara putih berbingkai hitam matte dengan lampu LED keliling, panel dinding oak, dan credenza gantung matte charcoal.',
+        variants: ['Carrara Marble', 'Matte Charcoal', 'Natural Oak', 'Mocha Walnut'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.25 (2).jpeg',
+        description:
+          'Tampilan ruang keluarga modern mewah dengan panel TV motif marmer putih Carrara berbingkai list hitam matte dan pencahayaan LED hangat di sekelilingnya. Dilengkapi latar panel dinding kayu oak serta credenza gantung minimalis warna matte charcoal.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm & Lis Aluminium/HPL Hitam',
+          finishing: 'HPL Taco / Carta Carrara Marble, Natural Oak & Matte Charcoal',
+          lighting: 'Lampu LED Strip Warm White Keliling Frame Marmer',
+          dimensions: 'Custom Menyesuaikan Ukuran TV & Lebar Dinding',
+          leadTime: '10 – 15 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Engsel Slow-Motion 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-06',
+        sku: 'KF-RK-01',
+        name: 'Kabinet Pajangan LED & Meja TV Sudut Japandi Oak-Putih',
+        category: 'Ruang Tamu & Keluarga',
+        featured: false,
+        badge: 'Konsep Japandi',
+        summary: 'Lemari kabinet penyimpanan kombinasi motif kayu oak muda dan putih dengan rak pajangan LED serta meja TV sudut L.',
+        variants: ['Natural Oak', 'Matte White', 'Cream Linen', 'Mocha Walnut'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.25.jpeg',
+        description:
+          'Set kabinet ruang keluarga bergaya Japandi yang memadukan lemari penyimpanan vertikal full-plafon bermotif kayu oak muda, rak pajangan terbuka ber-LED hangat, kabinet bawah pintu putih bersih, serta meja TV sudut L yang ergonomis.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm & Engsel Slow-Motion',
+          finishing: 'HPL Taco / Carta Light Oak & Matte White Clean',
+          lighting: 'Downlight / Strip LED Warm White di Setiap Kompartemen Pajangan',
+          dimensions: 'Custom Sudut L Menyesuaikan Denah Ruang Tamu / Keluarga',
+          leadTime: '14 – 18 Hari Kerja (Workshop Bandung)',
           warranty: 'Garansi Konstruksi & Hardware 3 Tahun',
         },
       },
       {
-        id: 'kf-7',
-        sku: 'KF-RT-02',
-        name: 'Credenza TV Minimalis',
-        category: 'Ruang Tamu',
-        featured: false,
-        badge: 'Desain Clean',
-        summary: 'Meja konsol TV dengan 3 laci soft-close, rak perangkat media & jalur kabel rapi.',
-        variants: ['Mocha Walnut', 'Matte White', 'Natural Oak', 'Dark Espresso'],
-        image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Credenza TV berprofil rendah yang menyembunyikan kabel perangkat hiburan agar ruang keluarga tampak bersih dan estetik. Dapat dibuat model berdiri dengan kaki kayu maupun model melayang (floating).',
-        specs: {
-          material: 'Plywood Meranti & Kaki Kayu Solid Mahoni',
-          finishing: 'HPL Woodgrain Moka & Pintu Laci Matte White',
-          dimensions: '180 x 42 x 52 cm (Bisa Custom Model Floating / Wall Panel)',
-          leadTime: '7 – 12 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-8',
-        sku: 'KF-RT-03',
-        name: 'Kursi Lounge Armchair',
-        category: 'Ruang Tamu',
-        featured: false,
-        badge: 'Accent Chair',
-        summary: 'Kursi santai tunggal berlekuk ergonomis dengan kaki kayu solid & kain lembut.',
-        variants: ['Cream Linen', 'Mocha Walnut', 'Dark Espresso', 'Matte White'],
-        image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Kursi aksen tunggal untuk sudut baca, ruang tamu, maupun kamar tidur. Memberikan sentuhan kemewahan hangat dengan sandaran empuk yang menopang punggung dengan nyaman.',
-        specs: {
-          material: 'Rangka Kayu Sungkai Solid & Busa High-Resilience',
-          finishing: 'Kain Boucle / Linen Premium & Kayu Natural Matte',
-          dimensions: '75 x 74 x 78 cm (Bisa Custom Jenis Kain & Warna)',
-          leadTime: '7 – 10 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-9',
+        id: 'kf-07',
         sku: 'KF-KT-02',
-        name: 'Nakas Samping Tempat Tidur',
+        name: 'Dipan Platform Minimalis, Headboard LED & Nakas Kembar',
         category: 'Kamar Tidur',
         featured: false,
-        badge: '2 Laci Soft-Close',
-        summary: 'Meja samping ranjang minimalis dengan 2 laci penyimpanan senyap & kaki kayu.',
-        variants: ['Matte White', 'Mocha Walnut', 'Natural Oak', 'Cream Linen'],
-        image: 'https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80',
+        badge: 'Minimalis Modern',
+        summary: 'Rangka tempat tidur model platform rendah bergaya minimalis modern, headboard panel lebar dengan lampu LED hangat, dan dua meja nakas samping.',
+        variants: ['Cream Linen', 'Matte White', 'Natural Oak', 'Matte Charcoal'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.26.jpeg',
         description:
-          'Nakas kompak bernuansa putih dan moka untuk menaruh lampu tidur, buku bacaan, dan perlengkapan pribadi di sisi tempat tidur dengan rel laci anti-banting.',
+          'Set tempat tidur bergaya arsitektural minimalis dengan rangka dipan model platform rendah, panel sandaran headboard memanjang di dinding dengan pencahayaan indirect LED hangat, serta sepasang meja nakas berlaci di sisi kiri dan kanan.',
         specs: {
-          material: 'Plywood Meranti 18mm & Kaki Kayu Solid',
-          finishing: 'HPL Doff Anti-Gores & Rel Laci Double Track',
-          dimensions: '48 x 40 x 54 cm (Bisa Custom Ukuran & Model Gantung)',
-          leadTime: '7 – 10 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 2 Tahun',
+          material: 'Multipleks / Blockboard Grade A 18mm & Rangka Dipan Kokoh',
+          finishing: 'HPL Taco / Carta Matte Neutral & Panel Upholstered / HPL Doff',
+          lighting: 'Lampu LED Strip Warm White di Atas & Tengah Panel Headboard',
+          dimensions: 'Custom Queen (160x200 cm) / King (180x200 cm) + 2 Nakas',
+          leadTime: '12 – 16 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Rel Laci Slow-Motion 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-08',
+        sku: 'KF-KT-03',
+        name: 'Master Bedroom Panel Kisi-Kisi Plafon, Nakas & Bench Moka',
+        category: 'Kamar Tidur',
+        featured: true,
+        badge: 'Master Suite Luxury',
+        summary: 'Panel dinding kisi-kisi kayu vertikal menerus hingga plafon kanopi di atas tempat tidur, pencahayaan cove LED, nakas bulat kembar, dan bench ujung kasur warna moka.',
+        variants: ['Mocha Walnut', 'Natural Oak', 'Cream Linen', 'Matte White'],
+        image: 'WhatsApp Image 2026-11-17 at 15.16.27.jpeg',
+        description:
+          'Desain kamar tidur utama mewah bernuansa moka hangat dengan aksen wall panel kisi-kisi kayu vertikal yang menerus mulus ke bagian plafon kanopi. Dilengkapi lampu cove LED di sisi kiri-kanan, dua nakas bulat estetik, dan bench empuk warna moka di ujung tempat tidur.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm, Kisi Woodpanel & Kayu Solid',
+          finishing: 'HPL Taco / Carta Mocha Walnut & Kain Suede/Linen Moka',
+          lighting: 'Indirect Cove LED Warm White Kiri-Kanan Panel Dinding & Plafon',
+          dimensions: 'Custom Menyesuaikan Lebar Kamar & Tinggi Plafon Rumah',
+          leadTime: '14 – 21 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Instalasi Plafon 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-09',
+        sku: 'KF-KC-01',
+        name: 'Kitchen Set L-Shape & Mini Bar Dua Warna Walnut-Charcoal',
+        category: 'Kitchen Set & Mini Bar',
+        featured: true,
+        badge: 'Best Seller Custom',
+        summary: 'Set dapur custom bentuk L lengkap dengan meja mini bar peninsula, kabinet HPL kombinasi serat kayu walnut dan abu gelap matte, rak piring kaca, serta lampu LED bawah kabinet.',
+        variants: ['Mocha Walnut', 'Matte Charcoal', 'Natural Oak', 'Matte White'],
+        image: 'WhatsApp Image 2026-11-17 at 15.40.29.jpeg',
+        description:
+          'Pembuatan kitchen set custom bentuk L lengkap dengan meja mini bar peninsula dan rak gantung display. Mengombinasikan kabinet atas motif serat kayu dark walnut, kabinet bawah dan tiang mini bar warna matte charcoal, rak piring berbingkai kaca, serta pencahayaan LED di bawah kabinet.',
+        specs: {
+          material: 'Multipleks / Blockboard Grade A 18mm Anti-Lembap & Engsel Slow-Motion',
+          finishing: 'HPL Taco / Carta Dark Walnut & Matte Charcoal (Top Table Granit/HPL)',
+          lighting: 'Lampu LED Strip Warm White Bawah Kabinet & Spotlight Mini Bar',
+          dimensions: 'Custom L-Shape + Mini Bar Menyesuaikan Ukuran Dapur (Survei Bandung)',
+          leadTime: '14 – 21 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Engsel Slow-Motion 3 Tahun',
         },
       },
       {
         id: 'kf-10',
         sku: 'KF-KC-02',
-        name: 'Rak Partisi Ruangan 2 Sisi',
-        category: 'Kitchen Set & Custom',
+        name: 'Kabinet Meja Kompor Tanam 3 Tungku Top Marmer Matte Black',
+        category: 'Kitchen Set & Mini Bar',
         featured: false,
-        badge: 'Penyekat Estetik',
-        summary: 'Pembatas ruangan dua sisi antara ruang tamu dan ruang makan dengan rak dekoratif.',
-        variants: ['Mocha Walnut', 'Natural Oak', 'Matte White', 'Dark Espresso'],
-        image: 'https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=900&q=80',
+        badge: 'Meja Kompor Custom',
+        summary: 'Meja kabinet kompor tanam custom finishing HPL hitam matte dengan permukaan atas motif marmer, lubang ventilasi udara stainless, dan kompartemen tabung gas.',
+        variants: ['Matte Charcoal', 'Carrara Marble', 'Mocha Walnut', 'Matte White'],
+        image: 'WhatsApp Image 2026-11-17 at 15.40.30.jpeg',
         description:
-          'Partisi ruangan fungsional yang memisahkan area ruang tamu dan ruang makan tanpa membuat rumah terasa sempit. Dilengkapi kisi-kisi kayu vertikal serta kabinet bawah tertutup.',
+          'Kabinet meja dapur khusus kompor tanam 3 tungku yang dibuat presisi dengan konstruksi kokoh tahan beban. Menggunakan finishing HPL hitam/charcoal matte elegan, top table motif marmer tahan panas, laci peralatan masak, serta pintu dengan kisi ventilasi udara stainless untuk sirkulasi tabung gas.',
         specs: {
-          material: 'Plywood Meranti & Kisi-Kisi Kayu Solid Finishing Doff',
-          finishing: 'HPL Mocha Walnut & Aksen Putih Minimalis',
-          dimensions: '140 x 35 x 210 cm (Bisa Custom Lebar & Tinggi)',
-          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-11',
-        sku: 'KF-KC-03',
-        name: 'Meja Konsol Foyer',
-        category: 'Kitchen Set & Custom',
-        featured: false,
-        badge: 'Area Pintu Masuk',
-        summary: 'Meja konsol ramping untuk area foyer/lorong dengan laci penyimpanan kunci & dekorasi.',
-        variants: ['Natural Oak', 'Mocha Walnut', 'Matte White', 'Dark Espresso'],
-        image: 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Menyambut tamu sejak langkah pertama di area foyer rumah Anda. Desain ramping hemat tempat dengan laci tersembunyi untuk menyimpan kunci kendaraan, surat, dan barang harian.',
-        specs: {
-          material: 'Kayu Solid Sungkai / Mahoni & Plywood Finishing HPL',
-          finishing: 'Natural Woodgrain Doff & Matte White',
-          dimensions: '120 x 35 x 82 cm (Bisa Custom Panjang & Tinggi)',
+          material: 'Multipleks / Blockboard Grade A 18mm & Kisi Ventilasi Stainless',
+          finishing: 'HPL Taco / Carta Matte Black/Charcoal & Top Motif Marmer',
+          lighting: 'Opsi Tambahan LED Ambient / Tanpa Lampu (Sesuai Request)',
+          dimensions: 'Custom Menyesuaikan Dimensi Kompor Tanam (2 / 3 Tungku)',
           leadTime: '7 – 12 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 3 Tahun',
-        },
-      },
-      {
-        id: 'kf-12',
-        sku: 'KF-LK-02',
-        name: 'Kabinet Sepatu Minimalis',
-        category: 'Lemari & Kabinet',
-        featured: false,
-        badge: 'Sirkulasi Udara',
-        summary: 'Rak sepatu tertutup kapasitas 18–24 pasang dengan lubang ventilasi & bangku duduk.',
-        variants: ['Matte White', 'Mocha Walnut', 'Natural Oak', 'Cream Linen'],
-        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80',
-        description:
-          'Kabinet penyimpanan sepatu rapi bebas debu dengan kisi sirkulasi udara di bagian pintu agar koleksi sepatu tetap terawat. Tersedia opsi tambahan bench empuk untuk memakai sepatu.',
-        specs: {
-          material: 'Plywood Meranti 18mm & Ambalan Adjustable',
-          finishing: 'HPL Matte White & Aksen Kayu Moka Hangat',
-          dimensions: '110 x 36 x 105 cm (Bisa Custom Kapasitas & Bench)',
-          leadTime: '8 – 12 Hari Kerja (Workshop Bandung)',
-          warranty: 'Garansi Konstruksi 3 Tahun',
+          warranty: 'Garansi Konstruksi & Engsel Slow-Motion 3 Tahun',
         },
       },
     ];
 
     // =========================================================================
-    // 3. 6 CATEGORY CARDS METADATA
+    // 3. 5 CATEGORY CARDS METADATA
     // =========================================================================
     const CATEGORY_CARDS = [
       {
-        name: 'Ruang Tamu',
-        desc: 'Sofa L, Armchair & Credenza',
-        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12V7a3 3 0 013-3h8a3 3 0 013 3v5M3 12a2 2 0 012 2v3h14v-3a2 2 0 114 0v4a1 1 0 01-1 1H2a1 1 0 01-1-1v-4a2 2 0 012-2zM6 20v2M18 20v2"/></svg>`,
+        name: 'Kitchen Set & Mini Bar',
+        desc: 'Kitchen Set L-Shape, Mini Bar & Meja Kompor',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h10M4 18h10M18 14v4m-2-2h4"/></svg>`,
       },
       {
-        name: 'Kamar Tidur',
-        desc: 'Dipan Jati & Meja Nakas',
-        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v11m0-4h18m0 4v-8a2 2 0 00-2-2H5a2 2 0 00-2 2m4-1h4v2H7V9z"/></svg>`,
-      },
-      {
-        name: 'Ruang Makan',
-        desc: 'Meja Makan Kayu Solid',
-        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M5 10v9M19 10v9M8 14h8v5"/></svg>`,
-      },
-      {
-        name: 'Ruang Kerja',
-        desc: 'Meja Direktur & Rak Buku',
+        name: 'Backdrop TV',
+        desc: 'Backdrop Marmer, Panel Mocha & Credenza',
         icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
       },
       {
-        name: 'Lemari & Kabinet',
-        desc: 'Wardrobe Sliding & Rak Sepatu',
+        name: 'Kamar Tidur',
+        desc: 'Master Bedroom Kisi-Kisi, Dipan & Nakas',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v11m0-4h18m0 4v-8a2 2 0 00-2-2H5a2 2 0 00-2 2m4-1h4v2H7V9z"/></svg>`,
+      },
+      {
+        name: 'Wall Panel & Partisi',
+        desc: 'Partisi Ruangan, Cermin LED & Bawah Tangga',
         icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1zm7 0v18M9 11v2m6-2v2"/></svg>`,
       },
       {
-        name: 'Kitchen Set & Custom',
-        desc: 'Kitchen Set, Partisi & Foyer',
-        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h10M4 18h10M18 14v4m-2-2h4"/></svg>`,
+        name: 'Ruang Tamu & Keluarga',
+        desc: 'Kabinet Pajangan LED & Meja TV Sudut',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12V7a3 3 0 013-3h8a3 3 0 013 3v5M3 12a2 2 0 012 2v3h14v-3a2 2 0 114 0v4a1 1 0 01-1 1H2a1 1 0 01-1-1v-4a2 2 0 012-2zM6 20v2M18 20v2"/></svg>`,
       },
     ];
 
@@ -1240,24 +1189,24 @@
       `;
       imgEl.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
     }
-
-    // Builds exact WhatsApp URL for a specific product & selected variant (+ optional custom note)
-    function buildProductWhatsappUrl(product, selectedColor, customNote = '') {
+    // Builds exact WhatsApp URL for a specific product & selected finishing (+ optional custom note)
+    function buildProductWhatsappUrl(product, selectedFinishing, customNote = '') {
       const lines = [
-        `Halo Khai' Furniture Bandung, saya tertarik dan ingin menanyakan informasi mengenai produk berikut:`,
+        `Halo Khai' Furniture Bandung, saya tertarik dan ingin menanyakan detail mengenai portofolio custom berikut:`,
         ``,
-        `• Nama Produk: ${product.name}`,
-        `• Kode SKU: ${product.sku}`,
-        `• Varian Warna/Finishing: ${selectedColor}`,
+        `• Judul Produk: ${product.name}`,
+        `• Kode Katalog: ${product.sku}`,
+        `• Kategori: ${product.category}`,
+        `• Pilihan Finishing / HPL: ${selectedFinishing}`,
       ];
 
       if (customNote && customNote.trim().length > 0) {
-        lines.push(`• Catatan / Request Custom: ${customNote.trim()}`);
+        lines.push(`• Catatan Ukuran / Lokasi Custom: ${customNote.trim()}`);
       }
 
       lines.push(
         ``,
-        `Mohon info detail spesifikasi, estimasi pengerjaan custom, dan penawarannya. Terima kasih.`
+        `Mohon informasi estimasi pembuatan custom dan jadwal survei lokasi di Bandung Raya. Terima kasih.`
       );
 
       const encodedMessage = encodeURIComponent(lines.join('\n'));
@@ -1471,8 +1420,8 @@
 
       return `
         <article class="bg-white text-[#2C1E16] rounded-2xl border border-[#B89F8D]/35 shadow-card hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group">
-          <!-- Product Image -->
-          <div class="relative h-52 sm:h-56 bg-[#EFE8E0] overflow-hidden cursor-pointer" onclick="openProductModal('${product.id}')">
+          <!-- Proportional 4:3 Product Image with Full-View Option -->
+          <div class="relative aspect-[4/3] w-full bg-[#EFE8E0] overflow-hidden cursor-pointer" onclick="openProductModal('${product.id}')">
             <img
               src="${product.image}"
               alt="${product.name} — Khai' Furniture Bandung"
@@ -1483,19 +1432,27 @@
             <!-- Top Badges: SKU & Custom Tag -->
             <div class="absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
               <span class="px-2.5 py-1 rounded-lg bg-[#2C1E16]/85 backdrop-blur-xs text-white text-[11px] font-mono font-semibold">
-                SKU: ${product.sku}
+                ${product.sku}
               </span>
               <span class="px-2.5 py-1 rounded-lg bg-white/95 text-[#1E3F2E] text-[11px] font-bold border border-[#1E3F2E]/15 shadow-xs">
                 ${product.badge}
               </span>
             </div>
+
+            <!-- Subtle Hover/Corner Prompt to View Uncropped Full Photo -->
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-[#2C1E16]/80 text-white text-[11px] font-medium backdrop-blur-xs inline-flex items-center gap-1 opacity-90 group-hover:opacity-100 transition">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+              </svg>
+              <span>Foto Penuh</span>
+            </span>
           </div>
 
           <!-- Card Content -->
           <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
             <div>
               <!-- Category Pill -->
-              <div class="flex items-center justify-between gap-2 mb-1">
+              <div class="flex items-center justify-between gap-2 mb-1.5">
                 <span class="text-xs font-bold text-[#6F4E37]">${product.category}</span>
                 <span class="text-[11px] font-semibold text-[#1E3F2E] bg-[#EBF2EE] px-2 py-0.5 rounded-md">
                   Custom Ukuran
@@ -1510,15 +1467,15 @@
                 ${product.name}
               </h3>
 
-              <!-- Concise Material & Dimension Summary -->
+              <!-- Concise Description Matched to the Photo -->
               <p class="text-xs text-[#6D5D53] leading-relaxed mt-1.5 line-clamp-2">
                 ${product.summary}
               </p>
 
-              <!-- Interactive Color / Finishing Swatches -->
+              <!-- Interactive HPL / Finishing Swatches -->
               <div class="mt-3.5 pt-3 border-t border-[#B89F8D]/20">
                 <div class="flex items-center justify-between text-[11px] text-[#6D5D53] mb-1.5">
-                  <span>Finishing: <strong class="text-[#2C1E16]">${selectedColor}</strong></span>
+                  <span>Opsi Finishing: <strong class="text-[#2C1E16]">${selectedColor}</strong></span>
                 </div>
                 <div class="flex items-center gap-2">
                   ${product.variants
@@ -1529,8 +1486,8 @@
                         <button
                           type="button"
                           onclick="selectProductVariant('${product.id}', '${variant}', event)"
-                          title="Pilih warna/finishing ${variant}"
-                          aria-label="Pilih warna ${variant}"
+                          title="Pilih finishing ${variant}"
+                          aria-label="Pilih finishing ${variant}"
                           class="w-5 h-5 rounded-full border transition cursor-pointer ${
                             isSelected
                               ? 'ring-2 ring-offset-2 ring-[#6F4E37] border-[#2C1E16]/50 scale-110'
@@ -1545,13 +1502,13 @@
               </div>
             </div>
 
-            <!-- Action Buttons: Detail & Direct WhatsApp Inquiry -->
+            <!-- Action Buttons: Detail & Foto Penuh + Direct WhatsApp Inquiry -->
             <div class="mt-4 pt-3.5 border-t border-[#B89F8D]/20 flex items-center gap-2">
               <button
                 onclick="openProductModal('${product.id}')"
-                class="px-3.5 py-2.5 rounded-xl border border-[#B89F8D]/60 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#2C1E16] text-xs font-bold transition cursor-pointer shrink-0"
+                class="px-3 py-2.5 rounded-xl border border-[#B89F8D]/60 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#2C1E16] text-xs font-bold transition cursor-pointer shrink-0"
               >
-                Detail
+                Detail &amp; Foto
               </button>
               <button
                 onclick="openProductWhatsapp('${product.id}', event)"
@@ -1635,7 +1592,7 @@
       });
 
       if (countText) {
-        countText.textContent = `Menampilkan ${filtered.length} dari ${PRODUCTS.length} model furnitur custom`;
+        countText.textContent = `Menampilkan ${filtered.length} dari ${PRODUCTS.length} karya custom interior`;
       }
 
       if (filtered.length === 0) {
@@ -1685,24 +1642,27 @@
 
       container.innerHTML = `
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
-          <!-- Left: Large Product Preview & Color Swatches -->
+          <!-- Left: Large Uncropped Full Photo Preview & HPL Swatches -->
           <div class="lg:col-span-5 space-y-4">
-            <div class="relative aspect-4/3 rounded-2xl overflow-hidden bg-[#EFE8E0] border border-[#B89F8D]/35">
+            <div class="relative rounded-2xl overflow-hidden bg-[#EFE8E0] border border-[#B89F8D]/35 flex items-center justify-center p-2">
               <img
                 src="${product.image}"
                 alt="${product.name}"
                 onerror="handleImageFallback(this, '${product.category}', '${product.name}')"
-                class="w-full h-full object-cover"
+                class="w-full max-h-[440px] object-contain rounded-xl"
               />
               <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-[#2C1E16]/85 text-white text-xs font-mono font-semibold">
-                SKU: ${product.sku}
+                Kode: ${product.sku}
+              </span>
+              <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-lg bg-white/95 text-[#1E3F2E] text-[11px] font-bold shadow-xs">
+                Tampilan Foto Penuh
               </span>
             </div>
 
-            <!-- Interactive Finishing / Color Swatch Selector -->
+            <!-- Interactive Finishing / HPL Swatch Selector -->
             <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35">
               <span class="block text-xs font-bold uppercase tracking-wider text-[#6D5D53] mb-2">
-                Pilih Warna / Finishing: <strong class="text-[#6F4E37]">${selectedColor}</strong>
+                Pilih Finishing / HPL: <strong class="text-[#6F4E37]">${selectedColor}</strong>
               </span>
               <div class="flex flex-wrap gap-2">
                 ${product.variants
@@ -1734,7 +1694,7 @@
             <div>
               <div class="flex flex-wrap items-center gap-2 text-xs mb-2">
                 <span class="px-2.5 py-1 rounded-lg bg-[#EFE8E0] text-[#5A3E2B] font-bold">${product.category}</span>
-                <span class="px-2.5 py-1 rounded-lg bg-[#EBF2EE] text-[#1E3F2E] font-bold">Workshop Khai' Furniture Bandung</span>
+                <span class="px-2.5 py-1 rounded-lg bg-[#EBF2EE] text-[#1E3F2E] font-bold">Portofolio Asli Khai' Furniture Bandung</span>
               </div>
 
               <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#2C1E16] leading-snug">
@@ -1748,28 +1708,32 @@
               <!-- Complete Technical Specifications Table -->
               <div class="mt-4 rounded-2xl border border-[#B89F8D]/35 overflow-hidden text-xs">
                 <div class="bg-[#EFE8E0]/75 px-4 py-2.5 font-bold text-[#2C1E16] uppercase tracking-wider flex items-center justify-between">
-                  <span>Spesifikasi Teknis &amp; Custom</span>
+                  <span>Spesifikasi Teknis &amp; Material Custom</span>
                   <span class="font-mono text-[#6F4E37]">${product.sku}</span>
                 </div>
                 <dl class="divide-y divide-[#B89F8D]/20">
                   <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
-                    <dt class="text-[#6D5D53] font-medium">Material Rangka / Utama</dt>
+                    <dt class="text-[#6D5D53] font-medium">Material Utama</dt>
                     <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.material}</dd>
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-[#FAF8F5]/70 gap-1">
-                    <dt class="text-[#6D5D53] font-medium">Finishing &amp; Warna</dt>
+                    <dt class="text-[#6D5D53] font-medium">Finishing &amp; Hardware</dt>
                     <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.finishing} (${selectedColor})</dd>
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
-                    <dt class="text-[#6D5D53] font-medium">Dimensi Standar / Custom</dt>
-                    <dd class="sm:col-span-2 font-semibold text-[#6F4E37]">${product.specs.dimensions}</dd>
+                    <dt class="text-[#6D5D53] font-medium">Pencahayaan LED</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.lighting}</dd>
                   </div>
                   <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-[#FAF8F5]/70 gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Dimensi Custom</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#6F4E37]">${product.specs.dimensions}</dd>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
                     <dt class="text-[#6D5D53] font-medium">Estimasi Pengerjaan</dt>
                     <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.leadTime}</dd>
                   </div>
-                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
-                    <dt class="text-[#6D5D53] font-medium">Garansi Konstruksi</dt>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-[#FAF8F5]/70 gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Garansi Workshop</dt>
                     <dd class="sm:col-span-2 font-semibold text-[#1E3F2E]">${product.specs.warranty}</dd>
                   </div>
                 </dl>
@@ -1778,12 +1742,12 @@
               <!-- Optional Customer Notes / Custom Request Textarea -->
               <div class="mt-4">
                 <label for="modalCustomNoteInput" class="block text-xs font-bold text-[#2C1E16] mb-1.5">
-                  Catatan / Request Custom Ukuran &amp; Lokasi Pengiriman (Opsional)
+                  Catatan Ukuran Ruangan / Lokasi Survei Bandung (Opsional)
                 </label>
                 <textarea
                   id="modalCustomNoteInput"
                   rows="2"
-                  placeholder="Contoh: Mau custom ukuran panjang 240cm warna mocha doff, kirim ke daerah Buah Batu Bandung..."
+                  placeholder="Contoh: Mau buat model seperti ini ukuran panjang 280cm kombinasi HPL moka & putih, lokasi rumah di Antapani Bandung..."
                   class="w-full p-3 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/45 text-xs sm:text-sm text-[#2C1E16] placeholder-[#6D5D53]/70 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
                 ></textarea>
               </div>
