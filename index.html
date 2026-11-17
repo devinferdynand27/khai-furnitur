@@ -1,0 +1,1832 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khai' Furniture — Jasa Pembuatan Custom Furniture Bandung</title>
+
+  <!-- Google Fonts: Playfair Display (Serif Logo & Headings) & Plus Jakarta Sans (Clean UI) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            mocha: {
+              footer: '#4A3222',
+              dark: '#5A3E2B',
+              DEFAULT: '#6F4E37',
+              medium: '#8B6B56',
+              latte: '#B89F8D',
+              soft: '#EFE8E0',
+            },
+            cream: '#FAF8F5',
+            espresso: {
+              DEFAULT: '#2C1E16',
+              muted: '#6D5D53',
+            },
+            forest: {
+              DEFAULT: '#1E3F2E',
+              soft: '#EBF2EE',
+            },
+            bronze: {
+              DEFAULT: '#9E7340',
+              light: '#D4B48C',
+            },
+            whatsapp: {
+              DEFAULT: '#25D366',
+              hover: '#1EBE5D',
+            },
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+          },
+          boxShadow: {
+            soft: '0 10px 30px -10px rgba(44, 30, 22, 0.08)',
+            card: '0 4px 20px -2px rgba(111, 78, 55, 0.08)',
+            elevated: '0 20px 42px -12px rgba(44, 30, 22, 0.18)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    /* Global Base Styles: Warm Off-White Background & Deep Espresso Text */
+    body {
+      background-color: #FAF8F5;
+      color: #2C1E16;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    /* Hide scrollbar on horizontal category pills while keeping smooth touch scroll */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    /* Subtle floating WhatsApp ring animation */
+    @keyframes waPulse {
+      0%, 100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.45);
+      }
+      50% {
+        box-shadow: 0 0 0 12px rgba(37, 211, 102, 0);
+      }
+    }
+    .wa-float-pulse {
+      animation: waPulse 2.6s infinite ease-in-out;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-[#6F4E37] selection:text-white">
+
+  <!-- ===================================================================== -->
+  <!-- 1. TOP ANNOUNCEMENT BAR (#5A3E2B)                                     -->
+  <!-- ===================================================================== -->
+  <div class="bg-[#5A3E2B] text-white text-xs sm:text-sm py-2.5 px-4 relative z-40">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-1.5 text-center sm:text-left">
+      <div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 font-medium">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-semibold bg-[#1E3F2E] text-emerald-100 border border-white/15 tracking-wide">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+          WORKSHOP BANDUNG
+        </span>
+        <span>
+          <strong>Khai' Furniture</strong> — Jasa Pembuatan Custom Furniture Bandung &bull; Konsultasi Desain &amp; Survey Lokasi Gratis Area Bandung Raya
+        </span>
+      </div>
+      <button
+        onclick="openGeneralConsultWhatsapp()"
+        class="shrink-0 inline-flex items-center gap-1.5 text-xs font-semibold text-amber-100 hover:text-white underline underline-offset-4 cursor-pointer"
+      >
+        <span>Jadwalkan Survey Lokasi &rarr;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 2. STICKY WHITE HEADER & BESPOKE KHAI' FURNITURE SVG LOGO             -->
+  <!-- ===================================================================== -->
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-md border-b border-[#B89F8D]/30 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Top Row: Bespoke SVG Logo, Live Search Bar, Konsultasi WA Button -->
+      <div class="flex items-center justify-between gap-3 sm:gap-6 py-2.5 sm:py-3">
+        <!-- Brand Logo: Bespoke Vector SVG faithful to Khai' Furniture -->
+        <a
+          href="#"
+          onclick="resetAllFilters(event)"
+          class="shrink-0 group focus:outline-none"
+          aria-label="Khai' Furniture — Jasa Pembuatan Custom Furniture Bandung"
+        >
+          <svg
+            class="h-12 sm:h-14 w-auto transition-transform duration-300 group-hover:scale-[1.015]"
+            viewBox="0 0 388 108"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-labelledby="headerLogoTitle"
+          >
+            <title id="headerLogoTitle">Khai' Furniture — Furniture And More — Jasa Pembuatan Custom Furniture Bandung</title>
+            <defs>
+              <!-- Warm metallic bronze/mocha gradient matching the uploaded logo -->
+              <linearGradient id="khaiBronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#B88B53" />
+                <stop offset="50%" stop-color="#9E7340" />
+                <stop offset="100%" stop-color="#7B562B" />
+              </linearGradient>
+              <!-- Deep forest green gradient matching the uploaded logo -->
+              <linearGradient id="khaiGreenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%" stop-color="#274E3A" />
+                <stop offset="100%" stop-color="#1E3F2E" />
+              </linearGradient>
+            </defs>
+
+            <!-- Stylized Monogram "K": Vertical Pillar & Top Sweeping Crescent (Dark Forest Green #1E3F2E) -->
+            <path
+              d="M36 28 H50 V55 L36 68 Z"
+              fill="url(#khaiGreenGrad)"
+            />
+            <path
+              d="M31 12 C56 4, 82 14, 79 34 C76 49, 60 61, 36 68 C55 56, 68 44, 70 30 C72 17, 54 11, 31 12 Z"
+              fill="url(#khaiGreenGrad)"
+            />
+
+            <!-- Stylized Monogram "K": Lower Diagonal Leg & Leftward Sweeping Swoosh (Metallic Bronze/Mocha #9E7340) -->
+            <path
+              d="M66 36 H79 L60 54 L81 73 H66 L51 58 C34 72, 16 76, 4 64 C16 71, 32 67, 48 53 L66 36 Z"
+              fill="url(#khaiBronzeGrad)"
+            />
+
+            <!-- Serif Wordmark: "hai'" in Bronze/Mocha & "Furniture" in Dark Forest Green -->
+            <text
+              x="84"
+              y="72"
+              fill="url(#khaiBronzeGrad)"
+              font-family="'Playfair Display', Georgia, serif"
+              font-size="43"
+              font-weight="700"
+              letter-spacing="-0.5"
+            >hai’</text>
+            <text
+              x="175"
+              y="72"
+              fill="#1E3F2E"
+              font-family="'Playfair Display', Georgia, serif"
+              font-size="43"
+              font-weight="700"
+              letter-spacing="-0.3"
+            >Furniture</text>
+
+            <!-- Small Clean Sans-Serif Subtitle tucked beneath the left swoosh -->
+            <text
+              x="39"
+              y="84"
+              fill="#2C1E16"
+              font-family="'Plus Jakarta Sans', sans-serif"
+              font-size="10.2"
+              font-weight="600"
+              letter-spacing="0.15"
+            >Furniture And More</text>
+
+            <!-- Main Tagline beneath the brand title -->
+            <text
+              x="36"
+              y="102"
+              fill="#1E3F2E"
+              font-family="'Plus Jakarta Sans', sans-serif"
+              font-size="14.2"
+              font-weight="600"
+              letter-spacing="0.2"
+            >Jasa Pembuatan Custom Furniture Bandung</text>
+          </svg>
+        </a>
+
+        <!-- Center: Live Search Bar (Desktop) -->
+        <div class="hidden md:flex flex-1 max-w-xl relative">
+          <div class="relative w-full">
+            <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#8B6B56]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path stroke-linecap="round" d="M21 21l-4.35-4.35"></path>
+              </svg>
+            </span>
+            <input
+              type="text"
+              id="desktopSearchInput"
+              oninput="handleSearchInput(this.value)"
+              placeholder="Cari sofa L moka, kitchen set HPL, dipan jati, kode SKU..."
+              class="w-full pl-11 pr-10 py-2.5 bg-[#FAF8F5] border border-[#B89F8D]/45 rounded-xl text-sm text-[#2C1E16] placeholder-[#6D5D53]/75 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37] transition"
+            />
+            <button
+              id="desktopClearSearch"
+              onclick="clearSearch()"
+              class="hidden absolute inset-y-0 right-0 pr-3 items-center text-[#6D5D53] hover:text-[#2C1E16] cursor-pointer"
+              title="Hapus pencarian"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right: Quick "Konsultasi WA" CTA Button -->
+        <div class="flex items-center gap-2.5 shrink-0">
+          <button
+            onclick="openGeneralConsultWhatsapp()"
+            class="inline-flex items-center gap-2 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md active:scale-[0.99] transition cursor-pointer"
+          >
+            <!-- WhatsApp Icon -->
+            <svg class="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+            </svg>
+            <span>Konsultasi WA</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Search Bar -->
+      <div class="md:hidden pb-3">
+        <div class="relative w-full">
+          <span class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[#8B6B56]">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8"></circle>
+              <path stroke-linecap="round" d="M21 21l-4.35-4.35"></path>
+            </svg>
+          </span>
+          <input
+            type="text"
+            id="mobileSearchInput"
+            oninput="handleSearchInput(this.value)"
+            placeholder="Cari nama produk, kategori, SKU, atau material..."
+            class="w-full pl-10 pr-9 py-2 bg-[#FAF8F5] border border-[#B89F8D]/45 rounded-xl text-sm text-[#2C1E16] placeholder-[#6D5D53]/75 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
+          />
+          <button
+            id="mobileClearSearch"
+            onclick="clearSearch()"
+            class="hidden absolute inset-y-0 right-0 pr-3 items-center text-[#6D5D53] cursor-pointer"
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Horizontal Category Navigation Bar -->
+      <nav aria-label="Navigasi Kategori Furnitur" class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto no-scrollbar py-2.5 border-t border-[#B89F8D]/20 text-xs sm:text-sm">
+        <button onclick="selectCategory('Semua Produk')" data-nav-cat="Semua Produk" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-semibold bg-[#6F4E37] text-white transition cursor-pointer">
+          Semua Produk
+        </button>
+        <button onclick="selectCategory('Ruang Tamu')" data-nav-cat="Ruang Tamu" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Ruang Tamu
+        </button>
+        <button onclick="selectCategory('Kamar Tidur')" data-nav-cat="Kamar Tidur" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Kamar Tidur
+        </button>
+        <button onclick="selectCategory('Ruang Makan')" data-nav-cat="Ruang Makan" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Ruang Makan
+        </button>
+        <button onclick="selectCategory('Ruang Kerja')" data-nav-cat="Ruang Kerja" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Ruang Kerja
+        </button>
+        <button onclick="selectCategory('Lemari & Kabinet')" data-nav-cat="Lemari & Kabinet" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Lemari &amp; Kabinet
+        </button>
+        <button onclick="selectCategory('Kitchen Set & Custom')" data-nav-cat="Kitchen Set & Custom" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
+          Kitchen Set &amp; Custom
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================================================================== -->
+    <!-- 3. HERO BANNER CAROUSEL (3 SLIDES TAILORED TO KHAI' FURNITURE BANDUNG) -->
+    <!-- ===================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-5 sm:pt-7 pb-4">
+      <div
+        id="heroCarousel"
+        onmouseenter="pauseHeroAutoplay()"
+        onmouseleave="resumeHeroAutoplay()"
+        class="relative overflow-hidden rounded-2xl sm:rounded-3xl bg-white border border-[#B89F8D]/35 shadow-soft"
+      >
+        <!-- Carousel Track -->
+        <div id="heroSlidesTrack" class="flex transition-transform duration-700 ease-out">
+          <!-- Slide 1: Jasa Pembuatan Custom Furniture Bandung -->
+          <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EFE8E0]">
+            <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E3F2E]/10 text-[#1E3F2E] text-xs font-bold tracking-wider uppercase mb-4">
+                <span class="w-2 h-2 rounded-full bg-[#1E3F2E]"></span>
+                Workshop Bandung &bull; Custom Interior
+              </span>
+              <h1 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Jasa Pembuatan <span class="text-[#6F4E37] italic">Custom Furniture</span> Bandung
+              </h1>
+              <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
+                Wujudkan interior impian dengan material pilihan dan pengerjaan presisi dari workshop Bandung. Bebas konsultasi desain, pemilihan warna moka-putih, dan penyesuaian ukuran ruangan Anda.
+              </p>
+              <div class="flex flex-wrap items-center gap-3">
+                <a
+                  href="#katalogUtama"
+                  class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition inline-flex items-center gap-2"
+                >
+                  <span>Lihat Katalog Custom</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+                <button
+                  onclick="openGeneralConsultWhatsapp()"
+                  class="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-semibold text-sm shadow-sm transition cursor-pointer inline-flex items-center gap-2"
+                >
+                  <span>Chat Konsultasi WA</span>
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+              <img
+                src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=85"
+                alt="Jasa Pembuatan Custom Furniture Bandung — Khai' Furniture"
+                onerror="handleImageFallback(this, 'Custom Interior', 'Khai\' Furniture Bandung')"
+                class="w-full h-full object-cover object-center"
+              />
+              <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Khai' Furniture Bandung</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Custom Ukuran, Material &amp; Finishing Sesuai Ruangan</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2: Kitchen Set & Kabinet Custom Presisi -->
+          <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EAE1D6]">
+            <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#6F4E37]/10 text-[#6F4E37] text-xs font-bold tracking-wider uppercase mb-4">
+                Kitchen Set &amp; Wardrobe
+              </span>
+              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Kitchen Set &amp; Kabinet <span class="text-[#6F4E37] italic">Custom Presisi</span>
+              </h2>
+              <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
+                Desain menyesuaikan ukuran ruangan Anda, finishing HPL, Duco, hingga Kayu Solid. Dilengkapi engsel soft-close dan tata ruang ergonomis untuk dapur modern bernuansa moka &amp; putih.
+              </p>
+              <div class="flex flex-wrap items-center gap-3">
+                <button
+                  onclick="scrollToCategory('Kitchen Set & Custom')"
+                  class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition cursor-pointer inline-flex items-center gap-2"
+                >
+                  <span>Koleksi Kitchen Set &amp; Custom</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+                <button
+                  onclick="scrollToCategory('Lemari & Kabinet')"
+                  class="px-5 py-3 rounded-xl bg-white hover:bg-[#EFE8E0] border border-[#B89F8D]/50 text-[#2C1E16] font-semibold text-sm transition cursor-pointer"
+                >
+                  Lihat Lemari &amp; Kabinet
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+              <img
+                src="https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=1200&q=85"
+                alt="Kitchen Set dan Kabinet Custom Presisi Bandung"
+                onerror="handleImageFallback(this, 'Kitchen Set & Custom', 'Kitchen Set Custom Presisi')"
+                class="w-full h-full object-cover object-center"
+              />
+              <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Plywood Meranti &amp; HPL Premium</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Gratis Konsultasi Layout &amp; Pengukuran Bandung</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3: Sofa, Meja & Furnitur Estetik Bernuansa Hangat -->
+          <div class="w-full shrink-0 grid grid-cols-1 lg:grid-cols-12 items-center bg-gradient-to-br from-white via-[#FAF8F5] to-[#EFE8E0]">
+            <div class="lg:col-span-6 p-6 sm:p-10 lg:p-14 order-2 lg:order-1">
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E3F2E]/10 text-[#1E3F2E] text-xs font-bold tracking-wider uppercase mb-4">
+                Rumah &bull; Apartemen &bull; Kantor
+              </span>
+              <h2 class="font-serif text-2xl sm:text-4xl lg:text-[40px] font-bold text-[#2C1E16] leading-tight mb-4">
+                Sofa, Meja &amp; Furnitur Estetik <span class="text-[#6F4E37] italic">Bernuansa Hangat</span>
+              </h2>
+              <p class="text-sm sm:text-base text-[#6D5D53] leading-relaxed mb-6 max-w-lg">
+                Konsultasikan kebutuhan furnitur rumah, apartemen, maupun kantor langsung via WhatsApp. Pilih jenis kain, warna kayu, hingga dimensi khusus sesuai gaya interior Anda.
+              </p>
+              <div class="flex flex-wrap items-center gap-3">
+                <button
+                  onclick="scrollToCategory('Ruang Tamu')"
+                  class="px-6 py-3 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-semibold text-sm shadow-md hover:shadow-lg transition cursor-pointer inline-flex items-center gap-2"
+                >
+                  <span>Eksplorasi Ruang Tamu</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </button>
+                <button
+                  onclick="openGeneralConsultWhatsapp()"
+                  class="px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-semibold text-sm shadow-sm transition cursor-pointer"
+                >
+                  Tanya Custom via WA
+                </button>
+              </div>
+            </div>
+            <div class="lg:col-span-6 h-60 sm:h-80 lg:h-[430px] relative order-1 lg:order-2 overflow-hidden bg-[#EFE8E0]">
+              <img
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=85"
+                alt="Sofa dan Furnitur Estetik Bernuansa Hangat"
+                onerror="handleImageFallback(this, 'Ruang Tamu', 'Sofa & Furnitur Estetik')"
+                class="w-full h-full object-cover object-center"
+              />
+              <div class="absolute bottom-4 right-4 bg-white/95 backdrop-blur-sm px-4 py-2.5 rounded-xl shadow-md border border-[#B89F8D]/30 hidden sm:block">
+                <p class="text-[11px] text-[#1E3F2E] font-bold uppercase tracking-wider">Furniture And More</p>
+                <p class="text-xs font-semibold text-[#2C1E16]">Kualitas Pengerjaan Rapi &amp; Bergaransi Konstruksi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Prev / Next Carousel Buttons -->
+        <button
+          onclick="prevHeroSlide()"
+          aria-label="Slide sebelumnya"
+          class="absolute left-3 sm:left-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-[#2C1E16] shadow-md flex items-center justify-center transition cursor-pointer border border-[#B89F8D]/35"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onclick="nextHeroSlide()"
+          aria-label="Slide berikutnya"
+          class="absolute right-3 sm:right-4 top-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white/90 hover:bg-white text-[#2C1E16] shadow-md flex items-center justify-center transition cursor-pointer border border-[#B89F8D]/35"
+        >
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
+
+        <!-- Carousel Indicators -->
+        <div class="absolute bottom-3.5 left-1/2 -translate-x-1/2 flex items-center gap-2 bg-white/90 backdrop-blur-sm px-3 py-1.5 rounded-full border border-[#B89F8D]/30">
+          <button onclick="goToHeroSlide(0)" class="hero-dot w-6 h-2 rounded-full bg-[#6F4E37] transition-all cursor-pointer" aria-label="Slide 1"></button>
+          <button onclick="goToHeroSlide(1)" class="hero-dot w-2 h-2 rounded-full bg-[#B89F8D]/60 hover:bg-[#8B6B56] transition-all cursor-pointer" aria-label="Slide 2"></button>
+          <button onclick="goToHeroSlide(2)" class="hero-dot w-2 h-2 rounded-full bg-[#B89F8D]/60 hover:bg-[#8B6B56] transition-all cursor-pointer" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 4. 6 CATEGORY CARDS WITH ICONS & DYNAMIC PRODUCT COUNTS               -->
+    <!-- ===================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div class="flex items-end justify-between mb-5">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#8B6B56]">Kategori Ruangan &amp; Custom</span>
+          <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#2C1E16] mt-0.5">Pilihan Kategori Furnitur</h2>
+        </div>
+        <button
+          onclick="resetAllFilters()"
+          class="text-xs sm:text-sm font-semibold text-[#6F4E37] hover:text-[#5A3E2B] underline underline-offset-4 cursor-pointer"
+        >
+          Lihat Semua (12)
+        </button>
+      </div>
+
+      <div id="categoryGrid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4">
+        <!-- Rendered dynamically via JS with live product counts -->
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 5. PRODUK UNGGULAN MINGGU INI (HIGHLIGHT CURATED CUSTOM PIECES)       -->
+    <!-- ===================================================================== -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+      <div class="rounded-2xl sm:rounded-3xl bg-gradient-to-r from-[#5A3E2B] via-[#6F4E37] to-[#8B6B56] p-5 sm:p-8 text-white shadow-soft">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-6 border-b border-white/15">
+          <div>
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="px-2.5 py-0.5 rounded-full bg-[#1E3F2E] text-emerald-100 border border-white/20 text-[11px] font-bold uppercase tracking-wider">
+                Kurasi Workshop Bandung
+              </span>
+              <span class="text-xs text-amber-100/85 font-medium">Bisa Request Custom Ukuran &amp; Warna</span>
+            </div>
+            <h2 class="font-serif text-xl sm:text-2xl font-bold tracking-tight mt-1.5">
+              Produk Unggulan Minggu Ini
+            </h2>
+            <p class="text-xs sm:text-sm text-amber-100/90 mt-0.5">
+              Model furnitur custom paling diminati klien rumah tinggal, apartemen, dan kantor di Bandung Raya.
+            </p>
+          </div>
+          <a
+            href="#katalogUtama"
+            class="self-start md:self-auto px-4 py-2.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/20 text-white text-xs sm:text-sm font-semibold transition"
+          >
+            Lihat Semua Katalog &darr;
+          </a>
+        </div>
+
+        <!-- 4 Highlighted Featured Products -->
+        <div id="featuredGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 mt-6">
+          <!-- Rendered dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 6. KATALOG LENGKAP FURNITURE (12 PRODUK + FILTER KATEGORI & SEARCH)   -->
+    <!-- ===================================================================== -->
+    <section id="katalogUtama" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <!-- Header & Counter -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-3 mb-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-[#1E3F2E]">Khai' Furniture Bandung</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2C1E16] mt-0.5">Katalog Lengkap Furniture</h2>
+        </div>
+        <p id="catalogCountText" class="text-sm text-[#6D5D53] font-medium">
+          Menampilkan 12 produk custom &amp; siap pesan
+        </p>
+      </div>
+
+      <!-- Filter Bar (Category & Search Reset — Zero Price Filters) -->
+      <div class="bg-white rounded-2xl border border-[#B89F8D]/35 p-4 sm:p-5 shadow-card mb-7">
+        <div class="flex flex-col md:flex-row md:items-center justify-between gap-3.5">
+          <!-- Filter Category Dropdown -->
+          <div class="flex-1 max-w-md">
+            <label for="filterCategory" class="block text-xs font-bold uppercase tracking-wider text-[#6D5D53] mb-1.5">
+              Filter Kategori Ruangan
+            </label>
+            <select
+              id="filterCategory"
+              onchange="selectCategory(this.value)"
+              class="w-full px-3.5 py-2.5 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/45 text-sm font-medium text-[#2C1E16] focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
+            >
+              <option value="Semua Produk">Semua Produk (12 Model)</option>
+              <option value="Ruang Tamu">Ruang Tamu</option>
+              <option value="Kamar Tidur">Kamar Tidur</option>
+              <option value="Ruang Makan">Ruang Makan</option>
+              <option value="Ruang Kerja">Ruang Kerja</option>
+              <option value="Lemari & Kabinet">Lemari &amp; Kabinet</option>
+              <option value="Kitchen Set & Custom">Kitchen Set &amp; Custom</option>
+            </select>
+          </div>
+
+          <!-- Info Note + Reset Button -->
+          <div class="flex flex-wrap items-center gap-3">
+            <div class="px-3.5 py-2 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/30 text-xs text-[#6D5D53]">
+              <strong class="text-[#1E3F2E]">Info Custom:</strong> Semua model dapat disesuaikan dimensi, material &amp; warna finishing.
+            </div>
+            <button
+              onclick="resetAllFilters()"
+              class="py-2.5 px-4 rounded-xl border border-[#B89F8D]/50 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#5A3E2B] text-xs font-bold transition cursor-pointer inline-flex items-center gap-1.5"
+            >
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              <span>Reset Filter</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Active Filter Pills -->
+        <div id="activeFilterPills" class="hidden flex-wrap items-center gap-2 mt-3.5 pt-3 border-t border-[#B89F8D]/20 text-xs"></div>
+      </div>
+
+      <!-- 12-Product Catalog Grid -->
+      <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 sm:gap-6">
+        <!-- Rendered dynamically via JS -->
+      </div>
+
+      <!-- Empty Search State -->
+      <div id="emptyCatalogState" class="hidden bg-white rounded-3xl border border-[#B89F8D]/35 p-10 sm:p-14 text-center shadow-card">
+        <div class="w-16 h-16 mx-auto rounded-2xl bg-[#EFE8E0] text-[#6F4E37] flex items-center justify-center mb-4">
+          <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path stroke-linecap="round" d="M21 21l-4.35-4.35"></path>
+          </svg>
+        </div>
+        <h3 class="font-serif text-xl font-bold text-[#2C1E16] mb-2">Model Furnitur Tidak Ditemukan</h3>
+        <p class="text-sm text-[#6D5D53] max-w-md mx-auto mb-6">
+          Belum menemukan model yang dicari? Tim workshop kami siap membuatkan desain custom sesuai referensi gambar atau ukuran ruangan Anda.
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <button
+            onclick="resetAllFilters()"
+            class="px-5 py-2.5 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white text-sm font-semibold transition cursor-pointer"
+          >
+            Tampilkan Semua Produk
+          </button>
+          <button
+            onclick="openGeneralConsultWhatsapp()"
+            class="px-5 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-sm font-semibold transition cursor-pointer"
+          >
+            Konsultasi Custom via WA
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 7. KEUNGGULAN LAYANAN CUSTOM KHAI' FURNITURE BANDUNG (4 PILAR)        -->
+    <!-- ===================================================================== -->
+    <section class="bg-white border-y border-[#B89F8D]/25 py-12 sm:py-16">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-[#1E3F2E]">Workshop Custom Interior</span>
+          <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2C1E16] mt-1">
+            Keunggulan Layanan Custom Khai' Furniture Bandung
+          </h2>
+          <p class="text-xs sm:text-sm text-[#6D5D53] mt-2">
+            Setiap karya dikerjakan langsung oleh pengrajin berpengalaman di Bandung dengan standar konstruksi presisi dan estetika tinggi.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          <!-- Pillar 1: Konsultasi & Desain 3D -->
+          <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35 hover:border-[#6F4E37]/60 transition">
+            <div class="w-12 h-12 rounded-xl bg-[#6F4E37] text-white flex items-center justify-center mb-4 shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-base text-[#2C1E16] mb-1.5">Konsultasi &amp; Desain 3D</h3>
+            <p class="text-xs sm:text-sm text-[#6D5D53] leading-relaxed">
+              Diskusi kebutuhan tata ruang, pengukuran lokasi di Bandung Raya, serta visualisasi desain 3D sebelum proses produksi dimulai.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Material Berkualitas Tinggi -->
+          <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35 hover:border-[#6F4E37]/60 transition">
+            <div class="w-12 h-12 rounded-xl bg-[#1E3F2E] text-white flex items-center justify-center mb-4 shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-base text-[#2C1E16] mb-1.5">Material Berkualitas Tinggi</h3>
+            <p class="text-xs sm:text-sm text-[#6D5D53] leading-relaxed">
+              Menggunakan kayu jati/mahoni oven anti-rayap, plywood meranti solid, HPL premium, busa high-density, dan hardware soft-close.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Pengerjaan Workshop Bandung Rapi -->
+          <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35 hover:border-[#6F4E37]/60 transition">
+            <div class="w-12 h-12 rounded-xl bg-[#6F4E37] text-white flex items-center justify-center mb-4 shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-base text-[#2C1E16] mb-1.5">Pengerjaan Workshop Bandung Rapi</h3>
+            <p class="text-xs sm:text-sm text-[#6D5D53] leading-relaxed">
+              Diproduksi langsung di workshop Khai' Furniture Bandung dengan kontrol kualitas ketat pada setiap sambungan dan detail finishing.
+            </p>
+          </div>
+
+          <!-- Pillar 4: Pengiriman & Instalasi Profesional -->
+          <div class="p-6 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35 hover:border-[#6F4E37]/60 transition">
+            <div class="w-12 h-12 rounded-xl bg-[#1E3F2E] text-white flex items-center justify-center mb-4 shadow-xs">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+              </svg>
+            </div>
+            <h3 class="font-bold text-base text-[#2C1E16] mb-1.5">Pengiriman &amp; Instalasi Profesional</h3>
+            <p class="text-xs sm:text-sm text-[#6D5D53] leading-relaxed">
+              Tim teknisi kami mengantar dan memasang langsung furnitur custom Anda hingga rapi, presisi, dan siap digunakan di lokasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================== -->
+  <!-- 8. DARK MOCHA FOOTER (#4A3222) WITH LIGHT-ADAPTED SVG LOGO            -->
+  <!-- ===================================================================== -->
+  <footer class="bg-[#4A3222] text-[#EFE8E0]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10">
+        <!-- Brand Column with Light-Adapted Khai' Furniture SVG Logo -->
+        <div class="lg:col-span-5">
+          <a href="#" onclick="resetAllFilters(event)" class="inline-block mb-4" aria-label="Khai' Furniture Footer Logo">
+            <svg
+              class="h-14 sm:h-16 w-auto"
+              viewBox="0 0 388 108"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-labelledby="footerLogoTitle"
+            >
+              <title id="footerLogoTitle">Khai' Furniture — Furniture And More — Jasa Pembuatan Custom Furniture Bandung</title>
+              <!-- Light-adapted Monogram "K": Warm Cream/White (#FAF8F5) vertical pillar & top crescent -->
+              <path
+                d="M36 28 H50 V55 L36 68 Z"
+                fill="#FAF8F5"
+              />
+              <path
+                d="M31 12 C56 4, 82 14, 79 34 C76 49, 60 61, 36 68 C55 56, 68 44, 70 30 C72 17, 54 11, 31 12 Z"
+                fill="#FAF8F5"
+              />
+
+              <!-- Light-adapted Monogram "K": Soft Gold-Latte (#D4B48C) lower diagonal & leftward swoosh -->
+              <path
+                d="M66 36 H79 L60 54 L81 73 H66 L51 58 C34 72, 16 76, 4 64 C16 71, 32 67, 48 53 L66 36 Z"
+                fill="#D4B48C"
+              />
+
+              <!-- Serif Wordmark: "hai'" in Soft Gold-Latte (#D4B48C) & "Furniture" in Warm Cream/White (#FAF8F5) -->
+              <text
+                x="84"
+                y="72"
+                fill="#D4B48C"
+                font-family="'Playfair Display', Georgia, serif"
+                font-size="43"
+                font-weight="700"
+                letter-spacing="-0.5"
+              >hai’</text>
+              <text
+                x="175"
+                y="72"
+                fill="#FAF8F5"
+                font-family="'Playfair Display', Georgia, serif"
+                font-size="43"
+                font-weight="700"
+                letter-spacing="-0.3"
+              >Furniture</text>
+
+              <!-- Small Clean Sans-Serif Subtitle -->
+              <text
+                x="39"
+                y="84"
+                fill="#EFE8E0"
+                font-family="'Plus Jakarta Sans', sans-serif"
+                font-size="10.2"
+                font-weight="600"
+                letter-spacing="0.15"
+              >Furniture And More</text>
+
+              <!-- Main Tagline -->
+              <text
+                x="36"
+                y="102"
+                fill="#D4B48C"
+                font-family="'Plus Jakarta Sans', sans-serif"
+                font-size="14.2"
+                font-weight="600"
+                letter-spacing="0.2"
+              >Jasa Pembuatan Custom Furniture Bandung</text>
+            </svg>
+          </a>
+
+          <p class="text-sm text-[#EFE8E0]/85 leading-relaxed mb-5 max-w-md">
+            Spesialis pembuatan furnitur custom dan interior bernuansa hangat &amp; modern di Bandung. Melayani kebutuhan rumah tinggal, apartemen, kafe, hingga ruang kantor dengan kualitas workshop terpercaya.
+          </p>
+
+          <button
+            onclick="openGeneralConsultWhatsapp()"
+            class="inline-flex items-center gap-2.5 px-5 py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-sm shadow-md transition cursor-pointer"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+            </svg>
+            <span>WhatsApp Workshop: +62 812-3456-7890</span>
+          </button>
+        </div>
+
+        <!-- Quick Links: Kategori -->
+        <div class="lg:col-span-3">
+          <h4 class="font-bold text-[#FAF8F5] text-sm uppercase tracking-wider mb-4">Kategori Katalog</h4>
+          <ul class="space-y-2.5 text-sm text-[#D4B48C]">
+            <li><button onclick="scrollToCategory('Ruang Tamu')" class="hover:text-white transition cursor-pointer">Ruang Tamu</button></li>
+            <li><button onclick="scrollToCategory('Kamar Tidur')" class="hover:text-white transition cursor-pointer">Kamar Tidur</button></li>
+            <li><button onclick="scrollToCategory('Ruang Makan')" class="hover:text-white transition cursor-pointer">Ruang Makan</button></li>
+            <li><button onclick="scrollToCategory('Ruang Kerja')" class="hover:text-white transition cursor-pointer">Ruang Kerja</button></li>
+            <li><button onclick="scrollToCategory('Lemari & Kabinet')" class="hover:text-white transition cursor-pointer">Lemari &amp; Kabinet</button></li>
+            <li><button onclick="scrollToCategory('Kitchen Set & Custom')" class="hover:text-white transition cursor-pointer">Kitchen Set &amp; Custom</button></li>
+          </ul>
+        </div>
+
+        <!-- Bandung Workshop Address & Hours -->
+        <div class="lg:col-span-4">
+          <h4 class="font-bold text-[#FAF8F5] text-sm uppercase tracking-wider mb-4">Workshop &amp; Layanan Bandung</h4>
+          <ul class="space-y-3 text-sm text-[#EFE8E0]/85">
+            <li class="flex items-start gap-2.5">
+              <svg class="w-5 h-5 text-[#D4B48C] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <div>
+                <strong class="text-white block">Workshop Khai' Furniture Bandung</strong>
+                <span>Kawasan Buah Batu – Soekarno Hatta, Kota Bandung, Jawa Barat</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-5 h-5 text-[#D4B48C] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <strong class="text-white block">Jam Operasional Workshop &amp; Survey</strong>
+                <span>Senin – Sabtu: 08.00 – 17.00 WIB (Konsultasi WA Aktif Setiap Hari)</span>
+              </div>
+            </li>
+            <li class="flex items-start gap-2.5">
+              <svg class="w-5 h-5 text-[#D4B48C] shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <div>
+                <strong class="text-white block">Area Pengiriman &amp; Instalasi</strong>
+                <span>Bandung Raya, Cimahi, Sumedang, Jabodetabek &amp; Seluruh Pulau Jawa</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="border-t border-white/15 mt-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-[#D4B48C]">
+        <p>&copy; 2026 Khai' Furniture — Furniture And More. Jasa Pembuatan Custom Furniture Bandung.</p>
+        <p class="text-[#EFE8E0]/75">Katalog Digital &amp; Konsultasi Langsung via WhatsApp</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================== -->
+  <!-- 9. INTERACTIVE PRODUCT DETAIL MODAL WITH CUSTOM INQUIRY               -->
+  <!-- ===================================================================== -->
+  <div id="productDetailModal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true">
+    <!-- Backdrop -->
+    <div onclick="closeProductModal()" class="fixed inset-0 bg-[#2C1E16]/65 backdrop-blur-xs"></div>
+
+    <!-- Modal Panel -->
+    <div class="relative bg-white w-full max-w-4xl max-h-[92vh] overflow-y-auto rounded-2xl sm:rounded-3xl shadow-elevated border border-[#B89F8D]/40 z-10">
+      <!-- Close Button -->
+      <button
+        onclick="closeProductModal()"
+        aria-label="Tutup detail produk"
+        class="sticky top-3 float-right mr-3 mt-3 z-20 w-10 h-10 rounded-full bg-white/95 hover:bg-[#EFE8E0] text-[#2C1E16] shadow-md border border-[#B89F8D]/35 flex items-center justify-center transition cursor-pointer"
+      >
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
+      <div id="productModalContent" class="p-5 sm:p-8 clear-both">
+        <!-- Populated dynamically via JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================== -->
+  <!-- 10. FLOATING WHATSAPP BUTTON (BOTTOM RIGHT)                           -->
+  <!-- ===================================================================== -->
+  <button
+    onclick="openGeneralConsultWhatsapp()"
+    aria-label="Chat WhatsApp Khai' Furniture Bandung"
+    class="fixed bottom-5 right-5 z-40 inline-flex items-center gap-2.5 px-4 py-3.5 rounded-full bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm shadow-elevated wa-float-pulse transition cursor-pointer"
+  >
+    <svg class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+    </svg>
+    <span class="hidden sm:inline">Chat Custom WA</span>
+  </button>
+
+  <!-- ===================================================================== -->
+  <!-- JAVASCRIPT APPLICATION LOGIC                                          -->
+  <!-- ===================================================================== -->
+  <script>
+    // =========================================================================
+    // 1. CONFIGURATION & COLOR SWATCHES
+    // =========================================================================
+    const WHATSAPP_NUMBER = '6281234567890';
+
+    const COLOR_SWATCHES = {
+      'Mocha Walnut': '#6F4E37',
+      'Natural Oak': '#C69C6D',
+      'Cream Linen': '#EDE4D7',
+      'Dark Espresso': '#3B261A',
+      'Matte White': '#FAF8F5',
+    };
+
+    // =========================================================================
+    // 2. 12 DIVERSE FURNITURE & CUSTOM INTERIOR CATALOG ITEMS (NO PRICES)
+    // =========================================================================
+    const PRODUCTS = [
+      {
+        id: 'kf-1',
+        sku: 'KF-RT-01',
+        name: 'Sofa L Minimalis Mocha',
+        category: 'Ruang Tamu',
+        featured: true,
+        badge: 'Custom Favorit',
+        summary: 'Rangka kayu mahoni oven, kain linen woven anti-cakar, busa high-density D32.',
+        variants: ['Mocha Walnut', 'Cream Linen', 'Dark Espresso', 'Matte White'],
+        image: 'https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Sofa sudut bentuk L modern dengan proporsi nyaman untuk ruang keluarga masa kini. Dapat dipesan custom posisi chaise (kiri/kanan), panjang dudukan, serta pilihan kain linen maupun velvet tahan noda.',
+        specs: {
+          material: 'Kayu Solid Mahoni Oven Anti-Rayap & Busa High-Density D32',
+          finishing: 'Kain Linen Woven Water-Repellent & Kaki Kayu Natural Doff',
+          dimensions: '240 x 165 x 82 cm (Bisa Custom Ukuran Ruangan)',
+          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Resmi Konstruksi Rangka & Busa 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-2',
+        sku: 'KF-KT-01',
+        name: 'Dipan Kayu Jati & Headboard Busa',
+        category: 'Kamar Tidur',
+        featured: true,
+        badge: 'Kayu Jati Solid',
+        summary: 'Konstruksi kayu jati solid kokoh dengan sandaran kepala empuk berlapis kain moka.',
+        variants: ['Mocha Walnut', 'Natural Oak', 'Cream Linen', 'Dark Espresso'],
+        image: 'https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Rangka tempat tidur kokoh berbahan kayu jati pilihan dengan headboard empuk berjahit vertikal estetik. Tersedia untuk ukuran Single, Queen (160x200), King (180x200), hingga tambahan laci penyimpanan bawah.',
+        specs: {
+          material: 'Kayu Jati Solid Kiln-Dried & Slat Penopang Tebal',
+          finishing: 'Melamine Doff Serat Kayu + Headboard Fabric Soft-Touch',
+          dimensions: '172 x 212 x 115 cm / Queen (Bisa Custom King & Laci Bawah)',
+          leadTime: '12 – 16 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi Kayu & Sambungan 5 Tahun',
+        },
+      },
+      {
+        id: 'kf-3',
+        sku: 'KF-RM-01',
+        name: 'Meja Makan Kayu Solid 6 Kursi',
+        category: 'Ruang Makan',
+        featured: false,
+        badge: 'Set Keluarga',
+        summary: 'Top table kayu solid tebal 4 cm dengan sudut membulat & 6 kursi ergonomis.',
+        variants: ['Natural Oak', 'Mocha Walnut', 'Dark Espresso', 'Matte White'],
+        image: 'https://images.unsplash.com/photo-1617806118233-18e1de247200?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Set meja makan keluarga berkapasitas 6 orang dengan tampilan hangat bergaya modern Japandi. Permukaan meja dilapisi pelindung tahan panas dan noda cairan sehingga mudah dirawat setiap hari.',
+        specs: {
+          material: '100% Kayu Solid Jati / Sungkai Pilihan',
+          finishing: 'Polyurethane Matte Tahan Panas & Noda Cairan',
+          dimensions: 'Meja 180 x 90 x 75 cm + 6 Kursi (Bisa Custom 4–8 Kursi)',
+          leadTime: '14 – 18 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi Resmi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-4',
+        sku: 'KF-RK-01',
+        name: 'Meja Kerja Direktur & Rak Buku',
+        category: 'Ruang Kerja',
+        featured: false,
+        badge: 'Office & WFH',
+        summary: 'Meja kerja eksekutif lengkap dengan kabinet samping dan rak arsip terintegrasi.',
+        variants: ['Mocha Walnut', 'Dark Espresso', 'Natural Oak', 'Matte White'],
+        image: 'https://images.unsplash.com/photo-1518455027359-f3f8164ba6bd?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Solusi ruang kerja profesional di rumah maupun kantor dengan meja luas, lubang manajemen kabel tersembunyi (grommet), laci berkunci, dan rak buku belakang yang serasi.',
+        specs: {
+          material: 'Plywood Meranti 18mm & Rangka Kaki Besi Hollow Powder-Coated',
+          finishing: 'HPL Taco Woodgrain Texture & Edging PVC Presisi',
+          dimensions: 'Meja 160 x 75 x 75 cm + Rak 120 x 35 x 190 cm (Custom)',
+          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Rel Laci 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-5',
+        sku: 'KF-LK-01',
+        name: 'Lemari Pakaian Sliding 3 Pintu Custom',
+        category: 'Lemari & Kabinet',
+        featured: true,
+        badge: 'Custom Full Plafon',
+        summary: 'Pintu geser hemat ruang dengan kombinasi HPL moka-putih & kompartemen gantungan.',
+        variants: ['Matte White', 'Mocha Walnut', 'Cream Linen', 'Natural Oak'],
+        image: 'https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Lemari pakaian 3 pintu geser (sliding) yang dirancang presisi mengikuti tinggi dan lebar dinding kamar Anda. Bagian dalam dapat dicustom untuk gantungan gamis/jas, laci perhiasan, dan rak lipat.',
+        specs: {
+          material: 'Plywood Meranti Solid 18mm (Bukan Serbuk Kayu / Particle Board)',
+          finishing: 'Kombinasi HPL Matte White & Mocha Woodgrain',
+          dimensions: '180 x 60 x 220 cm (Bisa Custom Full Plafon)',
+          leadTime: '14 – 20 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Rel Pintu & Konstruksi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-6',
+        sku: 'KF-KC-01',
+        name: 'Kitchen Set Minimalis HPL Moka-Putih',
+        category: 'Kitchen Set & Custom',
+        featured: true,
+        badge: 'Best Seller Custom',
+        summary: 'Kabinet atas-bawah presisi dengan engsel soft-close & pilihan top table granit.',
+        variants: ['Matte White', 'Mocha Walnut', 'Cream Linen', 'Natural Oak'],
+        image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Pembuatan kitchen set custom menyesuaikan layout dapur lurus (single line), bentuk L, maupun U. Menggunakan plywood tahan lembap dengan hardware engsel slow-motion dan rak piring tarik.',
+        specs: {
+          material: 'Plywood Meranti Tahan Lembap & Engsel Slow-Motion',
+          finishing: 'HPL Taco Moka & Putih Doff (Opsi Top Table Granit / Solid Surface)',
+          dimensions: 'Custom Menyesuaikan Ukuran Dapur (Survey Lokasi Bandung)',
+          leadTime: '14 – 21 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi & Hardware 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-7',
+        sku: 'KF-RT-02',
+        name: 'Credenza TV Minimalis',
+        category: 'Ruang Tamu',
+        featured: false,
+        badge: 'Desain Clean',
+        summary: 'Meja konsol TV dengan 3 laci soft-close, rak perangkat media & jalur kabel rapi.',
+        variants: ['Mocha Walnut', 'Matte White', 'Natural Oak', 'Dark Espresso'],
+        image: 'https://images.unsplash.com/photo-1593062096033-9a26b09da705?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Credenza TV berprofil rendah yang menyembunyikan kabel perangkat hiburan agar ruang keluarga tampak bersih dan estetik. Dapat dibuat model berdiri dengan kaki kayu maupun model melayang (floating).',
+        specs: {
+          material: 'Plywood Meranti & Kaki Kayu Solid Mahoni',
+          finishing: 'HPL Woodgrain Moka & Pintu Laci Matte White',
+          dimensions: '180 x 42 x 52 cm (Bisa Custom Model Floating / Wall Panel)',
+          leadTime: '7 – 12 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-8',
+        sku: 'KF-RT-03',
+        name: 'Kursi Lounge Armchair',
+        category: 'Ruang Tamu',
+        featured: false,
+        badge: 'Accent Chair',
+        summary: 'Kursi santai tunggal berlekuk ergonomis dengan kaki kayu solid & kain lembut.',
+        variants: ['Cream Linen', 'Mocha Walnut', 'Dark Espresso', 'Matte White'],
+        image: 'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Kursi aksen tunggal untuk sudut baca, ruang tamu, maupun kamar tidur. Memberikan sentuhan kemewahan hangat dengan sandaran empuk yang menopang punggung dengan nyaman.',
+        specs: {
+          material: 'Rangka Kayu Sungkai Solid & Busa High-Resilience',
+          finishing: 'Kain Boucle / Linen Premium & Kayu Natural Matte',
+          dimensions: '75 x 74 x 78 cm (Bisa Custom Jenis Kain & Warna)',
+          leadTime: '7 – 10 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-9',
+        sku: 'KF-KT-02',
+        name: 'Nakas Samping Tempat Tidur',
+        category: 'Kamar Tidur',
+        featured: false,
+        badge: '2 Laci Soft-Close',
+        summary: 'Meja samping ranjang minimalis dengan 2 laci penyimpanan senyap & kaki kayu.',
+        variants: ['Matte White', 'Mocha Walnut', 'Natural Oak', 'Cream Linen'],
+        image: 'https://images.unsplash.com/photo-1532372320572-cda25653a26d?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Nakas kompak bernuansa putih dan moka untuk menaruh lampu tidur, buku bacaan, dan perlengkapan pribadi di sisi tempat tidur dengan rel laci anti-banting.',
+        specs: {
+          material: 'Plywood Meranti 18mm & Kaki Kayu Solid',
+          finishing: 'HPL Doff Anti-Gores & Rel Laci Double Track',
+          dimensions: '48 x 40 x 54 cm (Bisa Custom Ukuran & Model Gantung)',
+          leadTime: '7 – 10 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 2 Tahun',
+        },
+      },
+      {
+        id: 'kf-10',
+        sku: 'KF-KC-02',
+        name: 'Rak Partisi Ruangan 2 Sisi',
+        category: 'Kitchen Set & Custom',
+        featured: false,
+        badge: 'Penyekat Estetik',
+        summary: 'Pembatas ruangan dua sisi antara ruang tamu dan ruang makan dengan rak dekoratif.',
+        variants: ['Mocha Walnut', 'Natural Oak', 'Matte White', 'Dark Espresso'],
+        image: 'https://images.unsplash.com/photo-1594620302200-9a762244a156?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Partisi ruangan fungsional yang memisahkan area ruang tamu dan ruang makan tanpa membuat rumah terasa sempit. Dilengkapi kisi-kisi kayu vertikal serta kabinet bawah tertutup.',
+        specs: {
+          material: 'Plywood Meranti & Kisi-Kisi Kayu Solid Finishing Doff',
+          finishing: 'HPL Mocha Walnut & Aksen Putih Minimalis',
+          dimensions: '140 x 35 x 210 cm (Bisa Custom Lebar & Tinggi)',
+          leadTime: '10 – 14 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-11',
+        sku: 'KF-KC-03',
+        name: 'Meja Konsol Foyer',
+        category: 'Kitchen Set & Custom',
+        featured: false,
+        badge: 'Area Pintu Masuk',
+        summary: 'Meja konsol ramping untuk area foyer/lorong dengan laci penyimpanan kunci & dekorasi.',
+        variants: ['Natural Oak', 'Mocha Walnut', 'Matte White', 'Dark Espresso'],
+        image: 'https://images.unsplash.com/photo-1533090481720-856c6e3c1fdc?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Menyambut tamu sejak langkah pertama di area foyer rumah Anda. Desain ramping hemat tempat dengan laci tersembunyi untuk menyimpan kunci kendaraan, surat, dan barang harian.',
+        specs: {
+          material: 'Kayu Solid Sungkai / Mahoni & Plywood Finishing HPL',
+          finishing: 'Natural Woodgrain Doff & Matte White',
+          dimensions: '120 x 35 x 82 cm (Bisa Custom Panjang & Tinggi)',
+          leadTime: '7 – 12 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 3 Tahun',
+        },
+      },
+      {
+        id: 'kf-12',
+        sku: 'KF-LK-02',
+        name: 'Kabinet Sepatu Minimalis',
+        category: 'Lemari & Kabinet',
+        featured: false,
+        badge: 'Sirkulasi Udara',
+        summary: 'Rak sepatu tertutup kapasitas 18–24 pasang dengan lubang ventilasi & bangku duduk.',
+        variants: ['Matte White', 'Mocha Walnut', 'Natural Oak', 'Cream Linen'],
+        image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80',
+        description:
+          'Kabinet penyimpanan sepatu rapi bebas debu dengan kisi sirkulasi udara di bagian pintu agar koleksi sepatu tetap terawat. Tersedia opsi tambahan bench empuk untuk memakai sepatu.',
+        specs: {
+          material: 'Plywood Meranti 18mm & Ambalan Adjustable',
+          finishing: 'HPL Matte White & Aksen Kayu Moka Hangat',
+          dimensions: '110 x 36 x 105 cm (Bisa Custom Kapasitas & Bench)',
+          leadTime: '8 – 12 Hari Kerja (Workshop Bandung)',
+          warranty: 'Garansi Konstruksi 3 Tahun',
+        },
+      },
+    ];
+
+    // =========================================================================
+    // 3. 6 CATEGORY CARDS METADATA
+    // =========================================================================
+    const CATEGORY_CARDS = [
+      {
+        name: 'Ruang Tamu',
+        desc: 'Sofa L, Armchair & Credenza',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 12V7a3 3 0 013-3h8a3 3 0 013 3v5M3 12a2 2 0 012 2v3h14v-3a2 2 0 114 0v4a1 1 0 01-1 1H2a1 1 0 01-1-1v-4a2 2 0 012-2zM6 20v2M18 20v2"/></svg>`,
+      },
+      {
+        name: 'Kamar Tidur',
+        desc: 'Dipan Jati & Meja Nakas',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 7v11m0-4h18m0 4v-8a2 2 0 00-2-2H5a2 2 0 00-2 2m4-1h4v2H7V9z"/></svg>`,
+      },
+      {
+        name: 'Ruang Makan',
+        desc: 'Meja Makan Kayu Solid',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M5 10v9M19 10v9M8 14h8v5"/></svg>`,
+      },
+      {
+        name: 'Ruang Kerja',
+        desc: 'Meja Direktur & Rak Buku',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>`,
+      },
+      {
+        name: 'Lemari & Kabinet',
+        desc: 'Wardrobe Sliding & Rak Sepatu',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3h14a1 1 0 011 1v16a1 1 0 01-1 1H5a1 1 0 01-1-1V4a1 1 0 011-1zm7 0v18M9 11v2m6-2v2"/></svg>`,
+      },
+      {
+        name: 'Kitchen Set & Custom',
+        desc: 'Kitchen Set, Partisi & Foyer',
+        icon: `<svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 10h16M4 14h10M4 18h10M18 14v4m-2-2h4"/></svg>`,
+      },
+    ];
+
+    // =========================================================================
+    // 4. APPLICATION STATE
+    // =========================================================================
+    const state = {
+      search: '',
+      category: 'Semua Produk',
+      selectedVariants: {},
+      heroIndex: 0,
+      activeModalProductId: null,
+    };
+
+    PRODUCTS.forEach((product) => {
+      state.selectedVariants[product.id] = product.variants[0];
+    });
+
+    // =========================================================================
+    // 5. SVG IMAGE FALLBACK & WHATSAPP URL BUILDERS
+    // =========================================================================
+    function handleImageFallback(imgEl, category = 'Custom Furniture', title = "Khai' Furniture") {
+      if (imgEl.dataset.fallbackApplied === 'true') return;
+      imgEl.dataset.fallbackApplied = 'true';
+
+      const safeTitle = String(title).replace(/[<>&'"]/g, '');
+      const safeCat = String(category).replace(/[<>&'"]/g, '');
+
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+          <defs>
+            <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#FAF8F5"/>
+              <stop offset="100%" stop-color="#EAE0D5"/>
+            </linearGradient>
+          </defs>
+          <rect width="800" height="600" fill="url(#bgGrad)"/>
+          <circle cx="400" cy="245" r="108" fill="#6F4E37" fill-opacity="0.10"/>
+          <path d="M295 265 v-45 a24 24 0 0 1 24 -24 h162 a24 24 0 0 1 24 24 v45" fill="none" stroke="#1E3F2E" stroke-width="10" stroke-linecap="round"/>
+          <rect x="275" y="260" width="250" height="54" rx="16" fill="#6F4E37"/>
+          <line x1="312" y1="314" x2="312" y2="352" stroke="#5A3E2B" stroke-width="10" stroke-linecap="round"/>
+          <line x1="488" y1="314" x2="488" y2="352" stroke="#5A3E2B" stroke-width="10" stroke-linecap="round"/>
+          <text x="400" y="412" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-weight="bold" fill="#2C1E16">${safeTitle}</text>
+          <text x="400" y="445" text-anchor="middle" font-family="sans-serif" font-size="15" font-weight="bold" fill="#1E3F2E">${safeCat} • Khai' Furniture Bandung</text>
+        </svg>
+      `;
+      imgEl.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+    }
+
+    // Builds exact WhatsApp URL for a specific product & selected variant (+ optional custom note)
+    function buildProductWhatsappUrl(product, selectedColor, customNote = '') {
+      const lines = [
+        `Halo Khai' Furniture Bandung, saya tertarik dan ingin menanyakan informasi mengenai produk berikut:`,
+        ``,
+        `• Nama Produk: ${product.name}`,
+        `• Kode SKU: ${product.sku}`,
+        `• Varian Warna/Finishing: ${selectedColor}`,
+      ];
+
+      if (customNote && customNote.trim().length > 0) {
+        lines.push(`• Catatan / Request Custom: ${customNote.trim()}`);
+      }
+
+      lines.push(
+        ``,
+        `Mohon info detail spesifikasi, estimasi pengerjaan custom, dan penawarannya. Terima kasih.`
+      );
+
+      const encodedMessage = encodeURIComponent(lines.join('\n'));
+      return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+    }
+
+    function openProductWhatsapp(productId, event = null, customNote = '') {
+      if (event) event.stopPropagation();
+      const product = PRODUCTS.find((p) => p.id === productId);
+      if (!product) return;
+
+      const selectedColor = state.selectedVariants[product.id] || product.variants[0];
+      const waUrl = buildProductWhatsappUrl(product, selectedColor, customNote);
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    function openGeneralConsultWhatsapp() {
+      const msg = [
+        `Halo Khai' Furniture Bandung,`,
+        ``,
+        `Saya ingin berkonsultasi mengenai pembuatan custom furniture / interior (ukuran, material, dan estimasi pengerjaan workshop Bandung). Boleh dibantu informasinya? Terima kasih.`,
+      ].join('\n');
+      const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
+      window.open(waUrl, '_blank', 'noopener,noreferrer');
+    }
+
+    // =========================================================================
+    // 6. HERO BANNER CAROUSEL CONTROLS
+    // =========================================================================
+    let heroInterval = null;
+    const HERO_SLIDE_COUNT = 3;
+
+    function updateHeroUI() {
+      const track = document.getElementById('heroSlidesTrack');
+      const dots = document.querySelectorAll('.hero-dot');
+      if (!track) return;
+
+      track.style.transform = `translateX(-${state.heroIndex * 100}%)`;
+      dots.forEach((dot, index) => {
+        if (index === state.heroIndex) {
+          dot.classList.remove('w-2', 'bg-[#B89F8D]/60');
+          dot.classList.add('w-6', 'bg-[#6F4E37]');
+        } else {
+          dot.classList.remove('w-6', 'bg-[#6F4E37]');
+          dot.classList.add('w-2', 'bg-[#B89F8D]/60');
+        }
+      });
+    }
+
+    function nextHeroSlide() {
+      state.heroIndex = (state.heroIndex + 1) % HERO_SLIDE_COUNT;
+      updateHeroUI();
+    }
+
+    function prevHeroSlide() {
+      state.heroIndex = (state.heroIndex - 1 + HERO_SLIDE_COUNT) % HERO_SLIDE_COUNT;
+      updateHeroUI();
+    }
+
+    function goToHeroSlide(index) {
+      state.heroIndex = index;
+      updateHeroUI();
+    }
+
+    function startHeroAutoplay() {
+      stopHeroAutoplay();
+      heroInterval = setInterval(nextHeroSlide, 5500);
+    }
+
+    function stopHeroAutoplay() {
+      if (heroInterval) clearInterval(heroInterval);
+    }
+
+    function pauseHeroAutoplay() {
+      stopHeroAutoplay();
+    }
+
+    function resumeHeroAutoplay() {
+      startHeroAutoplay();
+    }
+
+    // =========================================================================
+    // 7. SEARCH & CATEGORY FILTER LOGIC
+    // =========================================================================
+    function handleSearchInput(value) {
+      state.search = value.trim();
+
+      const dInput = document.getElementById('desktopSearchInput');
+      const mInput = document.getElementById('mobileSearchInput');
+      const dClear = document.getElementById('desktopClearSearch');
+      const mClear = document.getElementById('mobileClearSearch');
+
+      if (dInput && dInput.value !== value) dInput.value = value;
+      if (mInput && mInput.value !== value) mInput.value = value;
+
+      const hasQuery = state.search.length > 0;
+      [dClear, mClear].forEach((btn) => {
+        if (!btn) return;
+        btn.classList.toggle('hidden', !hasQuery);
+        btn.classList.toggle('flex', hasQuery);
+      });
+
+      renderMainCatalog();
+    }
+
+    function clearSearch() {
+      handleSearchInput('');
+    }
+
+    function selectCategory(categoryName) {
+      state.category = categoryName;
+
+      // Sync dropdown
+      const dropdown = document.getElementById('filterCategory');
+      if (dropdown) dropdown.value = categoryName;
+
+      // Sync top category navigation pills
+      document.querySelectorAll('.nav-cat-btn').forEach((btn) => {
+        const isCurrent = btn.dataset.navCat === categoryName;
+        btn.className = isCurrent
+          ? 'nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-semibold bg-[#6F4E37] text-white transition cursor-pointer'
+          : 'nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer';
+      });
+
+      renderCategoryCards();
+      renderMainCatalog();
+    }
+
+    function scrollToCategory(categoryName) {
+      selectCategory(categoryName);
+      const catalogSection = document.getElementById('katalogUtama');
+      if (catalogSection) {
+        catalogSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function resetAllFilters(event) {
+      if (event) event.preventDefault();
+      state.search = '';
+      state.category = 'Semua Produk';
+
+      const dInput = document.getElementById('desktopSearchInput');
+      const mInput = document.getElementById('mobileSearchInput');
+      if (dInput) dInput.value = '';
+      if (mInput) mInput.value = '';
+      document.getElementById('desktopClearSearch')?.classList.add('hidden');
+      document.getElementById('mobileClearSearch')?.classList.add('hidden');
+
+      selectCategory('Semua Produk');
+    }
+
+    function selectProductVariant(productId, variantName, event) {
+      if (event) event.stopPropagation();
+      state.selectedVariants[productId] = variantName;
+      renderFeaturedSection();
+      renderMainCatalog();
+      if (state.activeModalProductId === productId) {
+        renderProductModal();
+      }
+    }
+
+    // =========================================================================
+    // 8. RENDERING: 6 CATEGORY CARDS, FEATURED PRODUCTS & 12-ITEM CATALOG
+    // =========================================================================
+    function renderCategoryCards() {
+      const container = document.getElementById('categoryGrid');
+      if (!container) return;
+
+      container.innerHTML = CATEGORY_CARDS.map((cat) => {
+        const count = PRODUCTS.filter((p) => p.category === cat.name).length;
+        const isActive = state.category === cat.name;
+
+        return `
+          <button
+            onclick="scrollToCategory('${cat.name}')"
+            class="group text-left p-4 rounded-2xl border transition-all cursor-pointer flex flex-col justify-between ${
+              isActive
+                ? 'bg-[#6F4E37] text-white border-[#6F4E37] shadow-md -translate-y-0.5'
+                : 'bg-white text-[#2C1E16] border-[#B89F8D]/35 hover:border-[#6F4E37]/60 hover:shadow-card hover:-translate-y-0.5'
+            }"
+          >
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-11 h-11 rounded-xl flex items-center justify-center transition-colors ${
+                isActive
+                  ? 'bg-white/15 text-white'
+                  : 'bg-[#FAF8F5] text-[#6F4E37] group-hover:bg-[#EFE8E0]'
+              }">
+                ${cat.icon}
+              </div>
+              <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold ${
+                isActive
+                  ? 'bg-white/20 text-white'
+                  : 'bg-[#1E3F2E]/10 text-[#1E3F2E]'
+              }">
+                ${count} Model
+              </span>
+            </div>
+            <div>
+              <h3 class="font-bold text-xs sm:text-sm leading-snug">${cat.name}</h3>
+              <p class="text-[11px] mt-0.5 line-clamp-1 ${isActive ? 'text-amber-100' : 'text-[#6D5D53]'}">
+                ${cat.desc}
+              </p>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function renderProductCardHTML(product) {
+      const selectedColor = state.selectedVariants[product.id] || product.variants[0];
+
+      return `
+        <article class="bg-white text-[#2C1E16] rounded-2xl border border-[#B89F8D]/35 shadow-card hover:shadow-elevated hover:-translate-y-1 transition-all duration-300 flex flex-col overflow-hidden group">
+          <!-- Product Image -->
+          <div class="relative h-52 sm:h-56 bg-[#EFE8E0] overflow-hidden cursor-pointer" onclick="openProductModal('${product.id}')">
+            <img
+              src="${product.image}"
+              alt="${product.name} — Khai' Furniture Bandung"
+              loading="lazy"
+              onerror="handleImageFallback(this, '${product.category}', '${product.name}')"
+              class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+            />
+            <!-- Top Badges: SKU & Custom Tag -->
+            <div class="absolute top-3 left-3 flex flex-wrap items-center gap-1.5">
+              <span class="px-2.5 py-1 rounded-lg bg-[#2C1E16]/85 backdrop-blur-xs text-white text-[11px] font-mono font-semibold">
+                SKU: ${product.sku}
+              </span>
+              <span class="px-2.5 py-1 rounded-lg bg-white/95 text-[#1E3F2E] text-[11px] font-bold border border-[#1E3F2E]/15 shadow-xs">
+                ${product.badge}
+              </span>
+            </div>
+          </div>
+
+          <!-- Card Content -->
+          <div class="p-4 sm:p-5 flex-1 flex flex-col justify-between">
+            <div>
+              <!-- Category Pill -->
+              <div class="flex items-center justify-between gap-2 mb-1">
+                <span class="text-xs font-bold text-[#6F4E37]">${product.category}</span>
+                <span class="text-[11px] font-semibold text-[#1E3F2E] bg-[#EBF2EE] px-2 py-0.5 rounded-md">
+                  Custom Ukuran
+                </span>
+              </div>
+
+              <!-- Product Name -->
+              <h3
+                onclick="openProductModal('${product.id}')"
+                class="font-bold text-base text-[#2C1E16] leading-snug hover:text-[#6F4E37] transition cursor-pointer"
+              >
+                ${product.name}
+              </h3>
+
+              <!-- Concise Material & Dimension Summary -->
+              <p class="text-xs text-[#6D5D53] leading-relaxed mt-1.5 line-clamp-2">
+                ${product.summary}
+              </p>
+
+              <!-- Interactive Color / Finishing Swatches -->
+              <div class="mt-3.5 pt-3 border-t border-[#B89F8D]/20">
+                <div class="flex items-center justify-between text-[11px] text-[#6D5D53] mb-1.5">
+                  <span>Finishing: <strong class="text-[#2C1E16]">${selectedColor}</strong></span>
+                </div>
+                <div class="flex items-center gap-2">
+                  ${product.variants
+                    .map((variant) => {
+                      const hex = COLOR_SWATCHES[variant] || '#6F4E37';
+                      const isSelected = selectedColor === variant;
+                      return `
+                        <button
+                          type="button"
+                          onclick="selectProductVariant('${product.id}', '${variant}', event)"
+                          title="Pilih warna/finishing ${variant}"
+                          aria-label="Pilih warna ${variant}"
+                          class="w-5 h-5 rounded-full border transition cursor-pointer ${
+                            isSelected
+                              ? 'ring-2 ring-offset-2 ring-[#6F4E37] border-[#2C1E16]/50 scale-110'
+                              : 'border-[#2C1E16]/30 hover:scale-105'
+                          }"
+                          style="background-color: ${hex};"
+                        ></button>
+                      `;
+                    })
+                    .join('')}
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons: Detail & Direct WhatsApp Inquiry -->
+            <div class="mt-4 pt-3.5 border-t border-[#B89F8D]/20 flex items-center gap-2">
+              <button
+                onclick="openProductModal('${product.id}')"
+                class="px-3.5 py-2.5 rounded-xl border border-[#B89F8D]/60 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#2C1E16] text-xs font-bold transition cursor-pointer shrink-0"
+              >
+                Detail
+              </button>
+              <button
+                onclick="openProductWhatsapp('${product.id}', event)"
+                class="flex-1 py-2.5 px-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white text-xs font-bold shadow-xs transition cursor-pointer inline-flex items-center justify-center gap-1.5"
+              >
+                <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                </svg>
+                <span>Tanya Produk via WA</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      `;
+    }
+
+    function renderFeaturedSection() {
+      const grid = document.getElementById('featuredGrid');
+      if (!grid) return;
+
+      const featuredItems = PRODUCTS.filter((p) => p.featured);
+      grid.innerHTML = featuredItems.map((product) => renderProductCardHTML(product)).join('');
+    }
+
+    function renderActiveFilterPills() {
+      const container = document.getElementById('activeFilterPills');
+      if (!container) return;
+
+      const pills = [];
+      if (state.category !== 'Semua Produk') {
+        pills.push(`Kategori: <strong>${state.category}</strong>`);
+      }
+      if (state.search.length > 0) {
+        pills.push(`Kata Kunci: <strong>"${state.search}"</strong>`);
+      }
+
+      if (pills.length === 0) {
+        container.classList.add('hidden');
+        container.classList.remove('flex');
+        return;
+      }
+
+      container.classList.remove('hidden');
+      container.classList.add('flex');
+      container.innerHTML =
+        `<span class="text-[#6D5D53]">Filter aktif:</span>` +
+        pills
+          .map((p) => `<span class="px-2.5 py-1 rounded-lg bg-[#EFE8E0] text-[#5A3E2B]">${p}</span>`)
+          .join('') +
+        `<button onclick="resetAllFilters()" class="ml-auto text-[#6F4E37] font-bold hover:underline cursor-pointer">Hapus Filter</button>`;
+    }
+
+    function renderMainCatalog() {
+      const grid = document.getElementById('productGrid');
+      const emptyState = document.getElementById('emptyCatalogState');
+      const countText = document.getElementById('catalogCountText');
+      if (!grid) return;
+
+      renderActiveFilterPills();
+
+      const filtered = PRODUCTS.filter((product) => {
+        if (state.category !== 'Semua Produk' && product.category !== state.category) {
+          return false;
+        }
+        if (state.search.length > 0) {
+          const q = state.search.toLowerCase();
+          const searchable = [
+            product.name,
+            product.category,
+            product.sku,
+            product.summary,
+            product.description,
+            product.specs.material,
+            product.specs.finishing,
+          ]
+            .join(' ')
+            .toLowerCase();
+          if (!searchable.includes(q)) return false;
+        }
+        return true;
+      });
+
+      if (countText) {
+        countText.textContent = `Menampilkan ${filtered.length} dari ${PRODUCTS.length} model furnitur custom`;
+      }
+
+      if (filtered.length === 0) {
+        grid.classList.add('hidden');
+        emptyState?.classList.remove('hidden');
+        return;
+      }
+
+      grid.classList.remove('hidden');
+      emptyState?.classList.add('hidden');
+      grid.innerHTML = filtered.map((product) => renderProductCardHTML(product)).join('');
+    }
+
+    // =========================================================================
+    // 9. INTERACTIVE PRODUCT DETAIL MODAL WITH CUSTOM INQUIRY
+    // =========================================================================
+    function openProductModal(productId) {
+      state.activeModalProductId = productId;
+      renderProductModal();
+
+      const modal = document.getElementById('productDetailModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProductModal() {
+      state.activeModalProductId = null;
+      const modal = document.getElementById('productDetailModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.body.style.overflow = '';
+    }
+
+    function submitModalWhatsappInquiry(productId) {
+      const noteEl = document.getElementById('modalCustomNoteInput');
+      const customNote = noteEl ? noteEl.value : '';
+      openProductWhatsapp(productId, null, customNote);
+    }
+
+    function renderProductModal() {
+      const product = PRODUCTS.find((p) => p.id === state.activeModalProductId);
+      const container = document.getElementById('productModalContent');
+      if (!product || !container) return;
+
+      const selectedColor = state.selectedVariants[product.id] || product.variants[0];
+
+      container.innerHTML = `
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
+          <!-- Left: Large Product Preview & Color Swatches -->
+          <div class="lg:col-span-5 space-y-4">
+            <div class="relative aspect-4/3 rounded-2xl overflow-hidden bg-[#EFE8E0] border border-[#B89F8D]/35">
+              <img
+                src="${product.image}"
+                alt="${product.name}"
+                onerror="handleImageFallback(this, '${product.category}', '${product.name}')"
+                class="w-full h-full object-cover"
+              />
+              <span class="absolute top-3 left-3 px-3 py-1 rounded-lg bg-[#2C1E16]/85 text-white text-xs font-mono font-semibold">
+                SKU: ${product.sku}
+              </span>
+            </div>
+
+            <!-- Interactive Finishing / Color Swatch Selector -->
+            <div class="p-4 rounded-2xl bg-[#FAF8F5] border border-[#B89F8D]/35">
+              <span class="block text-xs font-bold uppercase tracking-wider text-[#6D5D53] mb-2">
+                Pilih Warna / Finishing: <strong class="text-[#6F4E37]">${selectedColor}</strong>
+              </span>
+              <div class="flex flex-wrap gap-2">
+                ${product.variants
+                  .map((variant) => {
+                    const hex = COLOR_SWATCHES[variant] || '#6F4E37';
+                    const isActive = selectedColor === variant;
+                    return `
+                      <button
+                        type="button"
+                        onclick="selectProductVariant('${product.id}', '${variant}')"
+                        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-xl border text-xs font-semibold transition cursor-pointer ${
+                          isActive
+                            ? 'border-[#6F4E37] bg-[#EFE8E0] text-[#2C1E16] shadow-2xs'
+                            : 'border-[#B89F8D]/45 bg-white text-[#6D5D53] hover:border-[#6F4E37]'
+                        }"
+                      >
+                        <span class="w-3.5 h-3.5 rounded-full border border-black/25" style="background-color:${hex}"></span>
+                        <span>${variant}</span>
+                      </button>
+                    `;
+                  })
+                  .join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Complete Specifications Table & Custom Inquiry Form -->
+          <div class="lg:col-span-7 flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center gap-2 text-xs mb-2">
+                <span class="px-2.5 py-1 rounded-lg bg-[#EFE8E0] text-[#5A3E2B] font-bold">${product.category}</span>
+                <span class="px-2.5 py-1 rounded-lg bg-[#EBF2EE] text-[#1E3F2E] font-bold">Workshop Khai' Furniture Bandung</span>
+              </div>
+
+              <h2 class="font-serif text-xl sm:text-2xl font-bold text-[#2C1E16] leading-snug">
+                ${product.name}
+              </h2>
+
+              <p class="mt-2.5 text-xs sm:text-sm text-[#6D5D53] leading-relaxed">
+                ${product.description}
+              </p>
+
+              <!-- Complete Technical Specifications Table -->
+              <div class="mt-4 rounded-2xl border border-[#B89F8D]/35 overflow-hidden text-xs">
+                <div class="bg-[#EFE8E0]/75 px-4 py-2.5 font-bold text-[#2C1E16] uppercase tracking-wider flex items-center justify-between">
+                  <span>Spesifikasi Teknis &amp; Custom</span>
+                  <span class="font-mono text-[#6F4E37]">${product.sku}</span>
+                </div>
+                <dl class="divide-y divide-[#B89F8D]/20">
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Material Rangka / Utama</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.material}</dd>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-[#FAF8F5]/70 gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Finishing &amp; Warna</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.finishing} (${selectedColor})</dd>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Dimensi Standar / Custom</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#6F4E37]">${product.specs.dimensions}</dd>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-[#FAF8F5]/70 gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Estimasi Pengerjaan</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#2C1E16]">${product.specs.leadTime}</dd>
+                  </div>
+                  <div class="grid grid-cols-1 sm:grid-cols-3 px-4 py-2.5 bg-white gap-1">
+                    <dt class="text-[#6D5D53] font-medium">Garansi Konstruksi</dt>
+                    <dd class="sm:col-span-2 font-semibold text-[#1E3F2E]">${product.specs.warranty}</dd>
+                  </div>
+                </dl>
+              </div>
+
+              <!-- Optional Customer Notes / Custom Request Textarea -->
+              <div class="mt-4">
+                <label for="modalCustomNoteInput" class="block text-xs font-bold text-[#2C1E16] mb-1.5">
+                  Catatan / Request Custom Ukuran &amp; Lokasi Pengiriman (Opsional)
+                </label>
+                <textarea
+                  id="modalCustomNoteInput"
+                  rows="2"
+                  placeholder="Contoh: Mau custom ukuran panjang 240cm warna mocha doff, kirim ke daerah Buah Batu Bandung..."
+                  class="w-full p-3 rounded-xl bg-[#FAF8F5] border border-[#B89F8D]/45 text-xs sm:text-sm text-[#2C1E16] placeholder-[#6D5D53]/70 focus:outline-none focus:ring-2 focus:ring-[#6F4E37]/30 focus:border-[#6F4E37]"
+                ></textarea>
+              </div>
+            </div>
+
+            <!-- Primary WhatsApp CTA -->
+            <div class="mt-5 pt-4 border-t border-[#B89F8D]/25 flex flex-col sm:flex-row items-center gap-3">
+              <button
+                onclick="submitModalWhatsappInquiry('${product.id}')"
+                class="w-full sm:flex-1 py-3.5 px-5 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm shadow-md transition cursor-pointer inline-flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                </svg>
+                <span>Chat WhatsApp untuk Menanyakan Produk Ini</span>
+              </button>
+              <button
+                onclick="closeProductModal()"
+                class="w-full sm:w-auto py-3.5 px-5 rounded-xl border border-[#B89F8D]/50 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#2C1E16] font-semibold text-xs sm:text-sm transition cursor-pointer"
+              >
+                Tutup
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    // =========================================================================
+    // 10. INITIALIZATION
+    // =========================================================================
+    window.addEventListener('DOMContentLoaded', () => {
+      renderCategoryCards();
+      renderFeaturedSection();
+      renderMainCatalog();
+      startHeroAutoplay();
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeProductModal();
+        }
+      });
+    });
+  </script>
+</body>
+</html>
