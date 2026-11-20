@@ -240,8 +240,19 @@
           </div>
         </div>
 
-        <!-- Right: Quick "Konsultasi WA" CTA Button -->
-        <div class="flex items-center gap-2.5 shrink-0">
+        <!-- Right: Quick "Konsultasi WA" & Lokasi Button -->
+        <div class="flex items-center gap-2 sm:gap-2.5 shrink-0">
+          <a
+            href="#lokasiWorkshop"
+            class="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl border border-[#B89F8D]/50 bg-[#FAF8F5] hover:bg-[#EFE8E0] text-[#5A3E2B] font-semibold text-xs sm:text-sm transition"
+          >
+            <svg class="w-4 h-4 text-[#6F4E37]" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>Lokasi Maps</span>
+          </a>
+
           <button
             onclick="openGeneralConsultWhatsapp()"
             class="inline-flex items-center gap-2 px-3.5 sm:px-5 py-2.5 sm:py-3 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm shadow-sm hover:shadow-md active:scale-[0.99] transition cursor-pointer"
@@ -303,6 +314,9 @@
         <button onclick="selectCategory('Ruang Tamu & Keluarga')" data-nav-cat="Ruang Tamu & Keluarga" class="nav-cat-btn shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#6D5D53] hover:bg-[#EFE8E0] hover:text-[#2C1E16] transition cursor-pointer">
           Ruang Tamu &amp; Keluarga
         </button>
+        <a href="#lokasiWorkshop" class="shrink-0 px-3.5 py-1.5 rounded-lg font-medium text-[#1E3F2E] hover:bg-[#EBF2EE] transition">
+          Lokasi Workshop
+        </a>
       </nav>
     </div>
   </header>
@@ -667,10 +681,97 @@
         </div>
       </div>
     </section>
+
+    <!-- ===================================================================== -->
+    <!-- 7. LOKASI WORKSHOP & GOOGLE MAPS EMBED                                -->
+    <!-- ===================================================================== -->
+    <section id="lokasiWorkshop" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <div class="bg-white rounded-3xl border border-[#B89F8D]/35 shadow-soft overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12">
+          <!-- Left Info Column -->
+          <div class="lg:col-span-5 p-6 sm:p-10 flex flex-col justify-between bg-gradient-to-br from-white to-[#FAF8F5]">
+            <div>
+              <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#1E3F2E]/10 text-[#1E3F2E] text-xs font-bold tracking-wider uppercase mb-3">
+                <span class="w-2 h-2 rounded-full bg-[#1E3F2E]"></span>
+                Lokasi Workshop Bandung
+              </span>
+              <h2 class="font-serif text-2xl sm:text-3xl font-bold text-[#2C1E16] leading-tight">
+                Kunjungi Workshop <span class="text-[#6F4E37] italic">Khai' Furniture</span>
+              </h2>
+              <p class="text-xs sm:text-sm text-[#6D5D53] leading-relaxed mt-2.5">
+                Silakan datang langsung untuk melihat sampel katalog HPL, material multipleks/blockboard, serta berkonsultasi mengenai kebutuhan interior custom rumah atau usaha Anda.
+              </p>
+
+              <div class="mt-6 space-y-4 text-xs sm:text-sm">
+                <!-- Alamat Lengkap -->
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-[#EFE8E0] text-[#6F4E37] flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-[#2C1E16] block">Alamat Workshop</strong>
+                    <span class="text-[#6D5D53]">
+                      Kitchen set custom khai furnitur, Gg. Margaluyu 1 No.47, Pasawahan, Kec. Dayeuhkolot, Kabupaten Bandung, Jawa Barat 40256
+                    </span>
+                  </div>
+                </div>
+
+                <!-- Jam Operasional -->
+                <div class="flex items-start gap-3">
+                  <div class="w-9 h-9 rounded-xl bg-[#EBF2EE] text-[#1E3F2E] flex items-center justify-center shrink-0 mt-0.5">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <strong class="text-[#2C1E16] block">Jam Operasional &amp; Jadwal Survei</strong>
+                    <span class="text-[#6D5D53]">Senin – Sabtu: 08.00 – 17.00 WIB (Gratis survei pengukuran area Bandung Raya)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="mt-7 pt-5 border-t border-[#B89F8D]/25 flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://www.google.com/maps/place/Kitchen+set+custom+khai+furnitur,+Gg.+Margaluyu+1+No.47,+Pasawahan,+Kec.+Dayeuhkolot,+Kabupaten+Bandung,+Jawa+Barat+40256/data=!4m2!3m1!1s0x2e68e8fb480deb97:0xd20d0d4d516a5dcd!18m1!1e1?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI2LjQwLjAYACCenQoqtgEsOTQyOTIxOTUsOTQyOTk1MzIsMTAwNzk2NDk4LDEwMDc5Nzc2MSwxMDA4NDAwNDUsOTQyMDczOTQsOTQyMDc1MDYsOTQyMDg1MDYsOTQyMTg2NTMsOTQyMjk4MzksOTQyNzUxNjgsMTAwODI1MDI1LDEwMDgyMDIzNywxMDA4MjI0OTQsMTAwODI3OTc1LDEwMDgzODM1OSwxMjE4MTY0NjEsMTAwODQ1OTM0LDEwMDg0NzQ0MUICSUQ%3D&skid=f888abf6-6567-424e-be45-c04698f36b77&g_st=aw"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="flex-1 py-3 px-4 rounded-xl bg-[#6F4E37] hover:bg-[#5A3E2B] text-white font-bold text-xs sm:text-sm text-center shadow-sm transition inline-flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                <span>Buka di Google Maps</span>
+              </a>
+
+              <button
+                onclick="openGeneralConsultWhatsapp()"
+                class="flex-1 py-3 px-4 rounded-xl bg-[#25D366] hover:bg-[#1EBE5D] text-white font-bold text-xs sm:text-sm shadow-sm transition cursor-pointer inline-flex items-center justify-center gap-2"
+              >
+                <svg class="w-4 h-4 shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
+                </svg>
+                <span>Janji Temu via WA</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Interactive Google Maps Iframe -->
+          <div class="lg:col-span-7 min-h-[340px] sm:min-h-[420px] bg-[#EFE8E0] relative border-t lg:border-t-0 lg:border-l border-[#B89F8D]/30">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3922795851063!2d107.610365!3d-6.9629658999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e8fb480deb97%3A0xd20d0d4d516a5dcd!2sKitchen%20set%20custom%20khai%20furnitur!5e0!3m2!1sid!2sid!4v1795146917790!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- ===================================================================== -->
-  <!-- 7. DARK MOCHA FOOTER (#4A3222) WITH LIGHT-ADAPTED SVG LOGO            -->
+  <!-- 8. DARK MOCHA FOOTER (#4A3222) WITH LIGHT-ADAPTED SVG LOGO            -->
   <!-- ===================================================================== -->
   <footer class="bg-[#4A3222] text-[#EFE8E0]">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -811,7 +912,7 @@
               </svg>
               <div>
                 <strong class="text-white block">Area Pengiriman &amp; Instalasi</strong>
-                <span>Bandung Raya, Cimahi, Sumedang, Jabodetabek   </span>
+                <span>Bandung Raya, Cimahi, Sumedang, Jabodetabek &amp; Seluruh Pulau Jawa</span>
               </div>
             </li>
           </ul>
@@ -826,7 +927,7 @@
   </footer>
 
   <!-- ===================================================================== -->
-  <!-- 8. INTERACTIVE PRODUCT DETAIL MODAL WITH CUSTOM INQUIRY               -->
+  <!-- 9. INTERACTIVE PRODUCT DETAIL MODAL WITH CUSTOM INQUIRY               -->
   <!-- ===================================================================== -->
   <div id="productDetailModal" class="fixed inset-0 z-50 hidden items-center justify-center p-3 sm:p-6" role="dialog" aria-modal="true">
     <!-- Backdrop -->
@@ -852,7 +953,7 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- 9. FLOATING WHATSAPP BUTTON (BOTTOM RIGHT)                            -->
+  <!-- 10. FLOATING WHATSAPP BUTTON (BOTTOM RIGHT)                           -->
   <!-- ===================================================================== -->
   <button
     onclick="openGeneralConsultWhatsapp()"
